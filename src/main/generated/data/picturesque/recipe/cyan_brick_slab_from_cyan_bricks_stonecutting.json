@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "picturesque:cyan_bricks",
+  "result": {
+    "count": 2,
+    "id": "picturesque:cyan_brick_slab"
+  }
+}

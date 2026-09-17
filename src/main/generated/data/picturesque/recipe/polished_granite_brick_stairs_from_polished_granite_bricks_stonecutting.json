@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "picturesque:polished_granite_bricks",
+  "result": {
+    "count": 1,
+    "id": "picturesque:polished_granite_brick_stairs"
+  }
+}

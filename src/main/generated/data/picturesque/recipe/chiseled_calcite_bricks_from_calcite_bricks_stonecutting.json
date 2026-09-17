@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "picturesque:calcite_bricks",
+  "result": {
+    "count": 1,
+    "id": "picturesque:chiseled_calcite_bricks"
+  }
+}

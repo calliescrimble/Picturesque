@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "picturesque:calcite_tiles",
+  "result": {
+    "count": 1,
+    "id": "picturesque:calcite_tile_stairs"
+  }
+}

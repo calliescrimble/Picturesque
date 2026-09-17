@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "picturesque:brown_bricks",
+  "result": {
+    "count": 1,
+    "id": "picturesque:brown_brick_stairs"
+  }
+}

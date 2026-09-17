@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "picturesque:white_bricks",
+  "result": {
+    "count": 2,
+    "id": "picturesque:white_brick_slab"
+  }
+}

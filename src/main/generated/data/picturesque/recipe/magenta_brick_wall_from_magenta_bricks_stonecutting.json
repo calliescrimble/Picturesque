@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "picturesque:magenta_bricks",
+  "result": {
+    "count": 1,
+    "id": "picturesque:magenta_brick_wall"
+  }
+}
