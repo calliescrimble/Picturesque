@@ -1,4 +1,4 @@
-#If the license isn't changed to ARR then ignore that, NONE OF Y'ALL ARE ALLOWED TO STEAL MY SHIT, FUCK OFF.
+## If the license isn't changed to ARR then ignore that, NONE OF Y'ALL ARE ALLOWED TO STEAL MY SHIT, FUCK OFF.
 
 # Picturesque
 This mod is a passion project of mine as my first ever mod and being created from my insatiable need to eat cool looking Minecraft blocks, and the vanilla palette having quite a few holes in it. As I added some simple blocks I got better and now the mod is in a state that I feel cool with publishing, and that I'm very proud of myself for making.
