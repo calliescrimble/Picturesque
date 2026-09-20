@@ -5,7 +5,7 @@ This mod is a passion project of mine as my first ever mod and being created fro
 
 Picturesque adds a lot of block sets, variations of existing blocks that don't get much love (calcite my beloved), and a few new worldgen additions. Don't expect anything extravagant, as my computer can barely run modding software and I went very simple with this mod.
 
-Have a bug to report? A feature to request? Join my Discord server on the right tab!
+Have a bug to report? A feature to request? Join my Discord server on the Modrinth page!
 
 ## Added Features
 
