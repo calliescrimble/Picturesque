@@ -6,16 +6,12 @@ import calliescrimble.picturesque.item.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.block.Blocks;
-import net.minecraft.data.recipe.CookingRecipeJsonBuilder;
 import net.minecraft.data.recipe.RecipeExporter;
 import net.minecraft.data.recipe.RecipeGenerator;
 import net.minecraft.item.Items;
-import net.minecraft.recipe.AbstractCookingRecipe;
-import net.minecraft.recipe.CampfireCookingRecipe;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
-import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.registry.tag.ItemTags;
 
 import java.util.concurrent.CompletableFuture;
@@ -30,15 +26,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         return new RecipeGenerator(wrapperLookup, recipeExporter) {
             @Override
             public void generate() {
-
-                CookingRecipeJsonBuilder.createCampfireCooking(
-                                Ingredient.ofItems(Items.ROTTEN_FLESH),
-                                RecipeCategory.FOOD,
-                                Items.RABBIT_HIDE,
-                                0.35f,
-                                600)
-                        .criterion(hasItem(Items.ROTTEN_FLESH), conditionsFromItem(Items.ROTTEN_FLESH))
-                        .offerTo(exporter);
 
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.CALLIE_PLUSHIE, Blocks.GRAY_WOOL);
                 offerStonecuttingRecipe(RecipeCategory.MISC, ModBlocks.CYNTHIA_PLUSHIE, Blocks.YELLOW_WOOL);
