@@ -184,7 +184,6 @@
   "block.picturesque.redstone_lantern": "Redstone Lantern",
   "block.picturesque.callie_plushie": "Callie Plushie",
   "block.picturesque.cynthia_plushie": "Cynthia Plushie",
-  "block.picturesque.burning_plushie": "Burning Plushie",
   "block.picturesque.oak_leaf_pile": "Oak Leaf Pile",
   "block.picturesque.spruce_leaf_pile": "Spruce Leaf Pile",
   "block.picturesque.birch_leaf_pile": "Birch Leaf Pile",
@@ -206,6 +205,5 @@
   "entity.picturesque.aspen_chest_boat": "Aspen Boat with Chest",
   "tag.item.picturesque.aspen_logs": "Aspen Logs",
   "tooltip.picturesque.callie_plushie": "Callie - Project Owner",
-  "tooltip.picturesque.cynthia_plushie": "Cynthia - Callie's Partner",
-  "tooltip.picturesque.burning_plushie": "Burning - 26.2 Maintainer"
+  "tooltip.picturesque.cynthia_plushie": "Cynthia - Callie's Partner"
 }

@@ -1253,12 +1253,6 @@ public class ModBlocks {
                     .strength(0.8f, 0.8f)
                     .sounds(BlockSoundGroup.WOOL)
                     .nonOpaque()));
-    public static final Block BURNING_PLUSHIE = registerBlock("burning_plushie",
-            properties -> new BurningPlushieBlock(properties
-                    .mapColor(MapColor.DEEPSLATE_GRAY)
-                    .strength(0.8f, 0.8f)
-                    .sounds(BlockSoundGroup.WOOL)
-                    .nonOpaque()));
 
     private static Block registerBlockWithoutBlockItem(String name, Function<AbstractBlock.Settings, Block> function) {
         return Registry.register(Registries.BLOCK, Identifier.of(Picturesque.MOD_ID, name),
@@ -1431,7 +1425,6 @@ public class ModBlocks {
             entries.addAfter(Blocks.BIRCH_SHELF, ModBlocks.ASPEN_SHELF);
             entries.add(ModBlocks.CALLIE_PLUSHIE);
             entries.addAfter(ModBlocks.CALLIE_PLUSHIE, ModBlocks.CYNTHIA_PLUSHIE);
-            entries.addAfter(ModBlocks.CYNTHIA_PLUSHIE, ModBlocks.BURNING_PLUSHIE);
             entries.addAfter(Blocks.COPPER_LANTERNS.waxedOxidized(), ModBlocks.REDSTONE_LANTERN);
 
         });

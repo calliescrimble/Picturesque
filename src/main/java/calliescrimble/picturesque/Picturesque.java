@@ -39,10 +39,6 @@ public class Picturesque implements ModInitializer {
 				list.add(Text.translatable("tooltip.picturesque.cynthia_plushie"));
 				return;}
 
-			if (itemStack.isOf(ModBlocks.BURNING_PLUSHIE.asItem())){
-				list.add(Text.translatable("tooltip.picturesque.burning_plushie"));
-				return;}
-
 		});
 
 		ModItems.registerModItems();

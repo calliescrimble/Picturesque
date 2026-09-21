@@ -215,7 +215,6 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.REDSTONE_LANTERN);
         addDrop(ModBlocks.CALLIE_PLUSHIE);
         addDrop(ModBlocks.CYNTHIA_PLUSHIE);
-        addDrop(ModBlocks.BURNING_PLUSHIE);
 
     }
 

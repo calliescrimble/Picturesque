@@ -59,7 +59,6 @@ public class PicturesqueClient implements ClientModInitializer {
         BlockRenderLayerMap.putBlock(ModBlocks.REDSTONE_LANTERN, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(ModBlocks.CALLIE_PLUSHIE, BlockRenderLayer.CUTOUT);
         BlockRenderLayerMap.putBlock(ModBlocks.CYNTHIA_PLUSHIE, BlockRenderLayer.CUTOUT);
-        BlockRenderLayerMap.putBlock(ModBlocks.BURNING_PLUSHIE, BlockRenderLayer.CUTOUT);
 
         ColorProviderRegistry.BLOCK.register(
                 (state, world, pos, tintIndex) -> {

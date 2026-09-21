@@ -227,7 +227,6 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerLantern(ModBlocks.REDSTONE_LANTERN);
         blockStateModelGenerator.registerNorthDefaultHorizontalRotatable(ModBlocks.CALLIE_PLUSHIE);
         blockStateModelGenerator.registerNorthDefaultHorizontalRotatable(ModBlocks.CYNTHIA_PLUSHIE);
-        blockStateModelGenerator.registerNorthDefaultHorizontalRotatable(ModBlocks.BURNING_PLUSHIE);
         blockStateModelGenerator.registerSingleton(ModBlocks.CHISELED_CALCITE_BRICKS, TexturedModel.END_FOR_TOP_CUBE_COLUMN);
         blockStateModelGenerator.registerSingleton(ModBlocks.ASPEN_LEAF_PILE, TexturedModel.CARPET);
         blockStateModelGenerator.registerSingleton(ModBlocks.AZALEA_LEAF_PILE, TexturedModel.CARPET);
