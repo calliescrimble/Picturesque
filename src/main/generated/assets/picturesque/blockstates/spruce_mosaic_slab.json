@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "picturesque:block/spruce_mosaic_slab"
+    },
+    "type=double": {
+      "model": "picturesque:block/spruce_mosaic"
+    },
+    "type=top": {
+      "model": "picturesque:block/spruce_mosaic_slab_top"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "picturesque:cyan_bricks",
+  "result": {
+    "id": "picturesque:cyan_brick_stairs"
+  }
+}

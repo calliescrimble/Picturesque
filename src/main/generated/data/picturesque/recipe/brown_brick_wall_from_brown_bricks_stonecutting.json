@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "picturesque:brown_bricks",
+  "result": {
+    "id": "picturesque:brown_brick_wall"
+  }
+}

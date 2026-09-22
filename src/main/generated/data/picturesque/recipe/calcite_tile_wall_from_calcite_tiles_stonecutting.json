@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "picturesque:calcite_tiles",
+  "result": {
+    "id": "picturesque:calcite_tile_wall"
+  }
+}

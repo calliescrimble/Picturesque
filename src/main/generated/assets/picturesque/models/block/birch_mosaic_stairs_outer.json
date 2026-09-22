@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "picturesque:block/birch_mosaic",
+    "side": "picturesque:block/birch_mosaic",
+    "top": "picturesque:block/birch_mosaic"
+  }
+}

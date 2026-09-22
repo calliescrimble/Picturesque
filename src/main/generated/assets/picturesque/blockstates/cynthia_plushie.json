@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "picturesque:block/cynthia_plushie",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "picturesque:block/cynthia_plushie"
+    },
+    "facing=south": {
+      "model": "picturesque:block/cynthia_plushie",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "picturesque:block/cynthia_plushie",
+      "y": 270
+    }
+  }
+}

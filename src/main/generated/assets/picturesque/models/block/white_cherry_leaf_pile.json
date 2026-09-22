@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/carpet",
+  "textures": {
+    "wool": "picturesque:block/white_cherry_leaf_pile"
+  }
+}

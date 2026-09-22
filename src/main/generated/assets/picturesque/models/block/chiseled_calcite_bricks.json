@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "picturesque:block/chiseled_calcite_bricks_top",
+    "side": "picturesque:block/chiseled_calcite_bricks"
+  }
+}

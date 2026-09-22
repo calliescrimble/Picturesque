@@ -1,0 +1,32 @@
+{
+  "values": [
+    "picturesque:calcite_wall",
+    "picturesque:smooth_basalt_wall",
+    "picturesque:calcite_brick_wall",
+    "picturesque:calcite_tile_wall",
+    "picturesque:smooth_basalt_brick_wall",
+    "picturesque:polished_granite_wall",
+    "picturesque:polished_diorite_wall",
+    "picturesque:polished_andesite_wall",
+    "picturesque:polished_granite_brick_wall",
+    "picturesque:polished_diorite_brick_wall",
+    "picturesque:polished_andesite_brick_wall",
+    "picturesque:amethyst_wall",
+    "picturesque:white_brick_wall",
+    "picturesque:light_gray_brick_wall",
+    "picturesque:gray_brick_wall",
+    "picturesque:black_brick_wall",
+    "picturesque:brown_brick_wall",
+    "picturesque:red_brick_wall",
+    "picturesque:orange_brick_wall",
+    "picturesque:yellow_brick_wall",
+    "picturesque:lime_brick_wall",
+    "picturesque:green_brick_wall",
+    "picturesque:cyan_brick_wall",
+    "picturesque:light_blue_brick_wall",
+    "picturesque:blue_brick_wall",
+    "picturesque:purple_brick_wall",
+    "picturesque:magenta_brick_wall",
+    "picturesque:pink_brick_wall"
+  ]
+}

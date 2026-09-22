@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": "picturesque:aspen_planks"
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "id": "picturesque:aspen_pressure_plate"
+  }
+}

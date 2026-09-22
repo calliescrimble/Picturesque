@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "picturesque",
+	"version": "${version}",
+	"name": "Picturesque",
+	"description": "An ambience/decoration mod adding small worldgen additions and rounding out the vanilla block sets.",
+	"authors": [
+		"Callie (calliescrimble)"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/picturesque",
+		"sources": "https://youtu.be/QDia3e12czc"
+	},
+	"license": "All Rights Reserved",
+	"icon": "assets/picturesque/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"calliescrimble.picturesque.Picturesque"
+		],
+		"client": [
+			"calliescrimble.picturesque.PicturesqueClient"
+		],
+		"fabric-datagen": [
+			"calliescrimble.picturesque.PicturesqueDataGenerator"
+		]
+	},
+	"mixins": [
+		"picturesque.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.1.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}

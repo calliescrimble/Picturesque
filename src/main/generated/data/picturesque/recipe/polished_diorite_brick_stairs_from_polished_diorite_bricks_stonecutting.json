@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "picturesque:polished_diorite_bricks",
+  "result": {
+    "id": "picturesque:polished_diorite_brick_stairs"
+  }
+}

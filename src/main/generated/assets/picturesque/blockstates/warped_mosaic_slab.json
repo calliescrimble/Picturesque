@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "picturesque:block/warped_mosaic_slab"
+    },
+    "type=double": {
+      "model": "picturesque:block/warped_mosaic"
+    },
+    "type=top": {
+      "model": "picturesque:block/warped_mosaic_slab_top"
+    }
+  }
+}

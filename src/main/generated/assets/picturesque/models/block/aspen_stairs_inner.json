@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "picturesque:block/aspen_planks",
+    "side": "picturesque:block/aspen_planks",
+    "top": "picturesque:block/aspen_planks"
+  }
+}

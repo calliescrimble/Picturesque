@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/carpet",
+  "textures": {
+    "wool": "picturesque:block/flowering_azalea_leaf_pile"
+  }
+}
