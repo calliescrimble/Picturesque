@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/block",
+  "parent": "minecraft:block/thin_block",
   "textures": {
     "particle": "picturesque:block/acacia_leaf_pile",
     "all": "picturesque:block/acacia_leaf_pile"

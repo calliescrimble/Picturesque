@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/block",
+  "parent": "minecraft:block/thin_block",
   "textures": {
     "particle": "picturesque:block/mangrove_leaf_pile",
     "all": "picturesque:block/mangrove_leaf_pile"
