@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "picturesque:bamboo_herringbone"
+  ],
+  "result": {
+    "id": "minecraft:bamboo_planks"
+  }
+}

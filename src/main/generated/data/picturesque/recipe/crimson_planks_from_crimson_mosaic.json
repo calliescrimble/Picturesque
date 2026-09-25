@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "picturesque:crimson_mosaic"
+  ],
+  "result": {
+    "id": "minecraft:crimson_planks"
+  }
+}

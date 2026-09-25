@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "picturesque:birch_mosaic"
+  ],
+  "result": {
+    "id": "minecraft:birch_planks"
+  }
+}

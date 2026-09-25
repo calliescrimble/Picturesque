@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "minecraft:acacia_leaves"
+  ],
+  "result": {
+    "id": "minecraft:acacia_sapling"
+  }
+}

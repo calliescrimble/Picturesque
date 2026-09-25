@@ -1,15 +1,13 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "group": "hanging_sign",
   "key": {
-    "#": "picturesque:stripped_aspen_log",
-    "X": "minecraft:iron_chain"
+    "A": "picturesque:stripped_aspen_log",
+    "I": "minecraft:iron_chain"
   },
   "pattern": [
-    "X X",
-    "###",
-    "###"
+    "I I",
+    "AAA",
+    "AAA"
   ],
   "result": {
     "count": 6,

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "picturesque:jungle_herringbone"
+  ],
+  "result": {
+    "id": "minecraft:jungle_planks"
+  }
+}

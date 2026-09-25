@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "picturesque:cherry_herringbone"
+  ],
+  "result": {
+    "id": "minecraft:cherry_planks"
+  }
+}

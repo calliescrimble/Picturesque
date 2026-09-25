@@ -41,7 +41,8 @@ public class ModConfiguredFeatures {
                 new StraightTrunkPlacer(10, 2, 0),
                 BlockStateProvider.simple(ModBlocks.ASPEN_LEAVES),
                 new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3),
-                new TwoLayersFeatureSize(1, 0, 1))
+                new TwoLayersFeatureSize(1, 0, 1),
+                BlockStateProvider.simple(Blocks.DIRT))
                 .ignoreVines()
                 .build());
 
@@ -52,22 +53,25 @@ public class ModConfiguredFeatures {
                         1,
                         0,
                         new WeightedListInt(
-                         WeightedList.<IntProvider>builder().add(ConstantInt.of(1), 1)
-                         .add(ConstantInt.of(2), 1)
-                         .add(ConstantInt.of(3), 1)
-                         .build()),
+                                WeightedList.<IntProvider>builder()
+                                        .add(ConstantInt.of(1), 1)
+                                        .add(ConstantInt.of(2), 1)
+                                        .add(ConstantInt.of(3), 1)
+                                        .build()),
                         UniformInt.of(2, 4),
                         UniformInt.of(-4, -3),
                         UniformInt.of(-1, 0)),
                 BlockStateProvider.simple(ModBlocks.WHITE_CHERRY_LEAVES),
-                new CherryFoliagePlacer(ConstantInt.of(4),
+                new CherryFoliagePlacer(
+                        ConstantInt.of(4),
                         ConstantInt.of(0),
                         ConstantInt.of(5),
                         0.25F,
                         0.5F,
                         0.16666667F,
                         0.33333334F),
-                new TwoLayersFeatureSize(1, 0, 2))
+                new TwoLayersFeatureSize(1, 0, 2),
+                BlockStateProvider.simple(Blocks.DIRT))
                 .ignoreVines()
                 .build());
 

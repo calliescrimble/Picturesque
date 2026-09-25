@@ -27,6 +27,10 @@ public interface ModEntityTypes {
                     .eyeHeight(0.5625F)
                     .clientTrackingRange(10));
 
+    public static ResourceKey<EntityType<?>> getRK(EntityType entityType) {
+        return BuiltInRegistries.ENTITY_TYPE.getResourceKey(entityType).get();
+    }
+
     static <T extends Entity> EntityType<T> registerEntityType(String name, EntityType.Builder<T> builder) {
         ResourceKey<EntityType<?>> key = ResourceKey.create(Registries.ENTITY_TYPE, Picturesque.id(name));
         return Registry.register(BuiltInRegistries.ENTITY_TYPE, key.identifier(), builder.build(key));

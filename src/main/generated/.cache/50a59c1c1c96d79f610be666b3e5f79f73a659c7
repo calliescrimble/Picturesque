@@ -1,4 +1,4 @@
-// 26.1.2	-999999999-01-01T00:00:00	Picturesque/Tags for minecraft:block
+// 26.2	-999999999-01-01T00:00:00	Picturesque/Tags for minecraft:block
 5c95b4ef3e0a690e325ba274bfed10f9ea8e912f data/minecraft/tags/block/bee_attractive.json
 b3482460185a6d5e31d2d2b885d7b896816fbac3 data/minecraft/tags/block/ceiling_hanging_signs.json
 10aed2194d27e8dae090efc7aad76d3e8cf57446 data/minecraft/tags/block/completes_find_tree_tutorial.json
@@ -8,7 +8,6 @@ f6601f4ff5721a92d73937ca51b4c4033218b5a0 data/minecraft/tags/block/flowers.json
 38d4e4b70386ec9d275efd5a9fd6adc2e6cdffc7 data/minecraft/tags/block/lanterns.json
 b3c13e40eb5a166aebfc1aeea45fab89b9d188d3 data/minecraft/tags/block/leaves.json
 10aed2194d27e8dae090efc7aad76d3e8cf57446 data/minecraft/tags/block/logs.json
-10aed2194d27e8dae090efc7aad76d3e8cf57446 data/minecraft/tags/block/logs_that_burn.json
 4d9d6fede46b83a6fa6f3d3e70937230053408ee data/minecraft/tags/block/mineable/axe.json
 85a220e464265681561d7b07cf3e9277a93a09c8 data/minecraft/tags/block/mineable/hoe.json
 14b81dddbe5c40ef323cb18e575a0908dd078fec data/minecraft/tags/block/mineable/pickaxe.json

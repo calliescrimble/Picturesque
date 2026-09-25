@@ -2,9 +2,6 @@ package calliescrimble.picturesque.item;
 import calliescrimble.picturesque.block.ModBlocks;
 import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTabOutput;
-import net.minecraft.core.Registry;
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.Blocks;
 
@@ -256,7 +253,7 @@ public interface ModCreativeTabOutput {
     }
 
     private static void addColored(FabricCreativeModeTabOutput output) {
-        output.insertAfter(Blocks.PINK_TERRACOTTA,
+        output.insertAfter(Blocks.GLAZED_TERRACOTTA.pink(),
                 Blocks.BRICKS,
                 Blocks.BRICK_STAIRS,
                 Blocks.BRICK_SLAB,
@@ -346,7 +343,7 @@ public interface ModCreativeTabOutput {
     private static void addFunctional(FabricCreativeModeTabOutput output) {
         output.insertAfter(Blocks.BIRCH_SHELF, ModBlocks.ASPEN_SHELF);
         output.insertAfter(Blocks.BIRCH_HANGING_SIGN, ModItems.ASPEN_SIGN, ModItems.ASPEN_HANGING_SIGN);
-        output.insertAfter(Blocks.COPPER_LANTERN.waxedOxidized(), ModBlocks.REDSTONE_LANTERN);
+        output.insertAfter(Blocks.COPPER_LANTERN.waxed().oxidized(), ModBlocks.REDSTONE_LANTERN);
         output.accept(ModBlocks.CALLIE_PLUSHIE);
         output.insertAfter(ModBlocks.CALLIE_PLUSHIE, ModBlocks.CYNTHIA_PLUSHIE);
     }

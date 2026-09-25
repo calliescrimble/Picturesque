@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "picturesque:pale_oak_mosaic"
+  ],
+  "result": {
+    "id": "minecraft:pale_oak_planks"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "minecraft:cherry_leaves"
+  ],
+  "result": {
+    "id": "minecraft:cherry_sapling"
+  }
+}

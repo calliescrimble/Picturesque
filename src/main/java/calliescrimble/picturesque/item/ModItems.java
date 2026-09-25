@@ -24,6 +24,10 @@ public class ModItems {
     public static final Item ASPEN_HANGING_SIGN = registerItem("aspen_hanging_sign", settings -> new HangingSignItem(ModBlocks.ASPEN_HANGING_SIGN, ModBlocks.ASPEN_WALL_HANGING_SIGN, settings
             .useBlockDescriptionPrefix().stacksTo(16)));
 
+    public static ResourceKey<Item> getRK(Item item) {
+        return BuiltInRegistries.ITEM.getResourceKey(item).get();
+    }
+
     private static Item registerItem(String name, Function<Item.Properties, Item> function) {
         return Registry.register(BuiltInRegistries.ITEM, Identifier.fromNamespaceAndPath(Picturesque.MOD_ID, name),
                 function.apply(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Picturesque.MOD_ID, name)))));

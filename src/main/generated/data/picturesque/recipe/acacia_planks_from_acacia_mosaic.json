@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "picturesque:acacia_mosaic"
+  ],
+  "result": {
+    "id": "minecraft:acacia_planks"
+  }
+}

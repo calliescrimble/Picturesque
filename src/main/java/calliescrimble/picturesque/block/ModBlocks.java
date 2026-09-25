@@ -39,7 +39,7 @@ import net.minecraft.world.level.block.UntintedParticleLeavesBlock;
 import net.minecraft.world.level.block.WallBlock;
 import net.minecraft.world.level.block.WallHangingSignBlock;
 import net.minecraft.world.level.block.WallSignBlock;
-import net.minecraft.world.level.block.entity.BlockEntityType;
+import net.minecraft.world.level.block.entity.BlockEntityTypes;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.WoodType;
@@ -1281,6 +1281,10 @@ public class ModBlocks {
                     .sound(SoundType.WOOL)
                     .noOcclusion()));
 
+    public static ResourceKey<Block> getRK(Block block) {
+        return BuiltInRegistries.BLOCK.getResourceKey(block).get();
+    }
+
     private static Block registerBlockWithoutBlockItem(String name, Function<BlockBehaviour.Properties, Block> function) {
         return Registry.register(BuiltInRegistries.BLOCK, Identifier.fromNamespaceAndPath(Picturesque.MOD_ID, name),
                 function.apply(BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(Picturesque.MOD_ID, name)))));
@@ -1303,11 +1307,11 @@ public class ModBlocks {
         StrippableBlockRegistry.register(ModBlocks.ASPEN_LOG, ModBlocks.STRIPPED_ASPEN_LOG);
         StrippableBlockRegistry.register(ModBlocks.ASPEN_WOOD, ModBlocks.STRIPPED_ASPEN_WOOD);
 
-        BlockEntityType.SHELF.addValidBlock(ModBlocks.ASPEN_SHELF);
-        BlockEntityType.SIGN.addValidBlock(ModBlocks.ASPEN_SIGN);
-        BlockEntityType.SIGN.addValidBlock(ModBlocks.ASPEN_WALL_SIGN);
-        BlockEntityType.HANGING_SIGN.addValidBlock(ModBlocks.ASPEN_HANGING_SIGN);
-        BlockEntityType.HANGING_SIGN.addValidBlock(ModBlocks.ASPEN_WALL_HANGING_SIGN);
+        BlockEntityTypes.SHELF.addValidBlock(ModBlocks.ASPEN_SHELF);
+        BlockEntityTypes.SIGN.addValidBlock(ModBlocks.ASPEN_SIGN);
+        BlockEntityTypes.SIGN.addValidBlock(ModBlocks.ASPEN_WALL_SIGN);
+        BlockEntityTypes.HANGING_SIGN.addValidBlock(ModBlocks.ASPEN_HANGING_SIGN);
+        BlockEntityTypes.HANGING_SIGN.addValidBlock(ModBlocks.ASPEN_WALL_HANGING_SIGN);
 
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.ASPEN_LOG, 5, 5);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.ASPEN_WOOD, 5, 5);

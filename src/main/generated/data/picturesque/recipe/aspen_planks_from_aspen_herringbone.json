@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "picturesque:aspen_herringbone"
+  ],
+  "result": {
+    "id": "picturesque:aspen_planks"
+  }
+}

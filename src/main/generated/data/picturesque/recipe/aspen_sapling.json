@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "picturesque:aspen_leaves"
+  ],
+  "result": {
+    "id": "picturesque:aspen_sapling"
+  }
+}

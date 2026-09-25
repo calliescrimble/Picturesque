@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "picturesque:warped_mosaic"
+  ],
+  "result": {
+    "id": "minecraft:warped_planks"
+  }
+}

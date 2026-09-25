@@ -16,9 +16,12 @@ import net.minecraft.world.level.block.Blocks;
 public class ModModelProvider extends FabricModelProvider {
 
     public static final BlockFamily ASPEN_BLOCK_FAMILY = BlockFamilies.familyBuilder(ModBlocks.ASPEN_PLANKS)
+            .log(ModBlocks.ASPEN_LOG)
+            .strippedLog(ModBlocks.STRIPPED_ASPEN_LOG)
             .button(ModBlocks.ASPEN_BUTTON)
             .fence(ModBlocks.ASPEN_FENCE)
             .fenceGate(ModBlocks.ASPEN_FENCE_GATE)
+            .hangingSign(ModBlocks.ASPEN_HANGING_SIGN, ModBlocks.ASPEN_WALL_HANGING_SIGN)
             .pressurePlate(ModBlocks.ASPEN_PRESSURE_PLATE)
             .sign(ModBlocks.ASPEN_SIGN, ModBlocks.ASPEN_WALL_SIGN)
             .slab(ModBlocks.ASPEN_SLAB)
@@ -66,7 +69,6 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.createTrivialBlock(ModBlocks.ASPEN_LEAVES, TexturedModel.LEAVES);
         blockStateModelGenerator.createTrivialBlock(ModBlocks.WHITE_CHERRY_LEAVES, TexturedModel.LEAVES);
         blockStateModelGenerator.createShelf(ModBlocks.ASPEN_SHELF, ModBlocks.STRIPPED_ASPEN_LOG);
-        blockStateModelGenerator.createHangingSign(ModBlocks.STRIPPED_ASPEN_LOG, ModBlocks.ASPEN_HANGING_SIGN, ModBlocks.ASPEN_WALL_HANGING_SIGN);
 
         blockStateModelGenerator.createTrivialCube(ModBlocks.OAK_HERRINGBONE);
         blockStateModelGenerator.createTrivialCube(ModBlocks.SPRUCE_HERRINGBONE);

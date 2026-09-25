@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "picturesque:mangrove_mosaic"
+  ],
+  "result": {
+    "id": "minecraft:mangrove_planks"
+  }
+}

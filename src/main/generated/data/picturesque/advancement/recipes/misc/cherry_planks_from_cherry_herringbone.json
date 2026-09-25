@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cherry_herringbone": {
+      "conditions": {
+        "items": [
+          {
+            "items": "picturesque:cherry_herringbone"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "picturesque:cherry_planks_from_cherry_herringbone"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_cherry_herringbone"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "picturesque:cherry_planks_from_cherry_herringbone"
+    ]
+  }
+}

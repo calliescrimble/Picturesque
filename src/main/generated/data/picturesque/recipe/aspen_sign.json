@@ -1,6 +1,5 @@
 {
   "type": "minecraft:crafting_shaped",
-  "category": "misc",
   "key": {
     "A": "picturesque:aspen_planks",
     "S": "minecraft:stick"

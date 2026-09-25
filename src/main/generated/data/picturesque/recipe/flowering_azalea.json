@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "minecraft:flowering_azalea_leaves"
+  ],
+  "result": {
+    "id": "minecraft:flowering_azalea"
+  }
+}

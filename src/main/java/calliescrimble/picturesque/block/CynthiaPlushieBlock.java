@@ -5,6 +5,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.animal.feline.CatSoundVariants;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
@@ -59,7 +60,7 @@ public class CynthiaPlushieBlock extends HorizontalDirectionalBlock {
                     pos.getX(),
                     pos.getY(),
                     pos.getZ(),
-                    SoundEvents.CAT_PURREOW_BABY,
+                    SoundEvents.CAT_SOUNDS.get(CatSoundVariants.SoundSet.CLASSIC).adultSounds().ambientSound(),
                     SoundSource.NEUTRAL,
                     1.0F,
                     1.0F

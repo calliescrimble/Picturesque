@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_stripped_logs": {
+    "has_spruce_herringbone": {
       "conditions": {
         "items": [
           {
-            "items": "picturesque:stripped_aspen_log"
+            "items": "picturesque:spruce_herringbone"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "picturesque:aspen_hanging_sign"
+        "recipe": "picturesque:spruce_planks_from_spruce_herringbone"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_stripped_logs"
+      "has_spruce_herringbone"
     ]
   ],
   "rewards": {
     "recipes": [
-      "picturesque:aspen_hanging_sign"
+      "picturesque:spruce_planks_from_spruce_herringbone"
     ]
   }
 }
