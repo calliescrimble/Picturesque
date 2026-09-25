@@ -1383,7 +1383,7 @@ public class ModBlocks {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COLORED_BLOCKS).register(entries -> {
 
-            entries.addAfter(Blocks.PINK_TERRACOTTA, Blocks.BRICKS, Blocks.BRICK_STAIRS, Blocks.BRICK_SLAB, Blocks.BRICK_WALL);
+            entries.addAfter(Blocks.PINK_GLAZED_TERRACOTTA, Blocks.BRICKS, Blocks.BRICK_STAIRS, Blocks.BRICK_SLAB, Blocks.BRICK_WALL);
             entries.addAfter(Blocks.BRICK_WALL, ModBlocks.WHITE_BRICKS, WHITE_BRICK_STAIRS, WHITE_BRICK_SLAB, WHITE_BRICK_WALL);
             entries.addAfter(ModBlocks.WHITE_BRICK_WALL, ModBlocks.LIGHT_GRAY_BRICKS, LIGHT_GRAY_BRICK_STAIRS, LIGHT_GRAY_BRICK_SLAB, LIGHT_GRAY_BRICK_WALL);
             entries.addAfter(ModBlocks.LIGHT_GRAY_BRICK_WALL, ModBlocks.GRAY_BRICKS, GRAY_BRICK_STAIRS, GRAY_BRICK_SLAB, GRAY_BRICK_WALL);

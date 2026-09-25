@@ -29,18 +29,6 @@ public class Picturesque implements ModInitializer {
 	public void onInitialize() {
 		LOGGER.info("This scene is very Picturesque!! [Title Card]");
 
-		ItemTooltipCallback.EVENT.register((itemStack, tooltipContext, tooltipType, list) -> {
-
-			if (itemStack.isOf(ModBlocks.CALLIE_PLUSHIE.asItem())){
-				list.add(Text.translatable("tooltip.picturesque.callie_plushie"));
-				return;}
-
-			if (itemStack.isOf(ModBlocks.CYNTHIA_PLUSHIE.asItem())){
-				list.add(Text.translatable("tooltip.picturesque.cynthia_plushie"));
-				return;}
-
-		});
-
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModEntityTypes.registerEntityTypes();

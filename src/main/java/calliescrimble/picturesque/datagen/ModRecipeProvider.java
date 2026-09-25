@@ -189,6 +189,71 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .criterion(hasItem(ModBlocks.STRIPPED_ASPEN_LOG), conditionsFromItem(ModBlocks.STRIPPED_ASPEN_LOG))
                         .offerTo(exporter);
 
+                createShapeless(RecipeCategory.MISC, Blocks.OAK_SAPLING)
+                        .input(Blocks.OAK_LEAVES)
+                        .criterion(hasItem(Blocks.OAK_LEAVES), conditionsFromItem(Blocks.OAK_LEAVES))
+                        .offerTo(exporter);
+
+                createShapeless(RecipeCategory.MISC, Blocks.SPRUCE_SAPLING)
+                        .input(Blocks.SPRUCE_LEAVES)
+                        .criterion(hasItem(Blocks.SPRUCE_LEAVES), conditionsFromItem(Blocks.SPRUCE_LEAVES))
+                        .offerTo(exporter);
+
+                createShapeless(RecipeCategory.MISC, Blocks.BIRCH_SAPLING)
+                        .input(Blocks.BIRCH_LEAVES)
+                        .criterion(hasItem(Blocks.BIRCH_LEAVES), conditionsFromItem(Blocks.BIRCH_LEAVES))
+                        .offerTo(exporter);
+
+                createShapeless(RecipeCategory.MISC, ModBlocks.ASPEN_SAPLING)
+                        .input(ModBlocks.ASPEN_LEAVES)
+                        .criterion(hasItem(ModBlocks.ASPEN_LEAVES), conditionsFromItem(ModBlocks.ASPEN_LEAVES))
+                        .offerTo(exporter);
+
+                createShapeless(RecipeCategory.MISC, Blocks.JUNGLE_SAPLING)
+                        .input(Blocks.JUNGLE_LEAVES)
+                        .criterion(hasItem(Blocks.JUNGLE_LEAVES), conditionsFromItem(Blocks.JUNGLE_LEAVES))
+                        .offerTo(exporter);
+
+                createShapeless(RecipeCategory.MISC, Blocks.ACACIA_SAPLING)
+                        .input(Blocks.ACACIA_LEAVES)
+                        .criterion(hasItem(Blocks.ACACIA_LEAVES), conditionsFromItem(Blocks.ACACIA_LEAVES))
+                        .offerTo(exporter);
+
+                createShapeless(RecipeCategory.MISC, Blocks.DARK_OAK_SAPLING)
+                        .input(Blocks.DARK_OAK_LEAVES)
+                        .criterion(hasItem(Blocks.DARK_OAK_LEAVES), conditionsFromItem(Blocks.DARK_OAK_LEAVES))
+                        .offerTo(exporter);
+
+                createShapeless(RecipeCategory.MISC, Blocks.MANGROVE_PROPAGULE)
+                        .input(Blocks.MANGROVE_LEAVES)
+                        .criterion(hasItem(Blocks.MANGROVE_LEAVES), conditionsFromItem(Blocks.MANGROVE_LEAVES))
+                        .offerTo(exporter);
+
+                createShapeless(RecipeCategory.MISC, Blocks.CHERRY_SAPLING)
+                        .input(Blocks.CHERRY_LEAVES)
+                        .criterion(hasItem(Blocks.CHERRY_LEAVES), conditionsFromItem(Blocks.CHERRY_LEAVES))
+                        .offerTo(exporter);
+
+                createShapeless(RecipeCategory.MISC, ModBlocks.WHITE_CHERRY_SAPLING)
+                        .input(ModBlocks.WHITE_CHERRY_LEAVES)
+                        .criterion(hasItem(ModBlocks.WHITE_CHERRY_LEAVES), conditionsFromItem(ModBlocks.WHITE_CHERRY_LEAVES))
+                        .offerTo(exporter);
+
+                createShapeless(RecipeCategory.MISC, Blocks.PALE_OAK_SAPLING)
+                        .input(Blocks.PALE_OAK_LEAVES)
+                        .criterion(hasItem(Blocks.PALE_OAK_LEAVES), conditionsFromItem(Blocks.PALE_OAK_LEAVES))
+                        .offerTo(exporter);
+
+                createShapeless(RecipeCategory.MISC, Blocks.AZALEA)
+                        .input(Blocks.AZALEA_LEAVES)
+                        .criterion(hasItem(Blocks.AZALEA_LEAVES), conditionsFromItem(Blocks.AZALEA_LEAVES))
+                        .offerTo(exporter);
+
+                createShapeless(RecipeCategory.MISC, Blocks.FLOWERING_AZALEA)
+                        .input(Blocks.FLOWERING_AZALEA_LEAVES)
+                        .criterion(hasItem(Blocks.FLOWERING_AZALEA_LEAVES), conditionsFromItem(Blocks.FLOWERING_AZALEA_LEAVES))
+                        .offerTo(exporter);
+
                 createShaped(RecipeCategory.MISC, ModBlocks.OAK_HERRINGBONE, 3)
                         .pattern("P ")
                         .pattern("PP")
@@ -267,6 +332,137 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .input('P', ModBlocks.ASPEN_PLANKS)
                         .criterion(hasItem(ModBlocks.ASPEN_PLANKS), conditionsFromItem(ModBlocks.ASPEN_PLANKS))
                         .offerTo(exporter);
+
+                createShapeless(RecipeCategory.MISC, Blocks.OAK_PLANKS)
+                        .input(ModBlocks.OAK_HERRINGBONE)
+                        .criterion(hasItem(ModBlocks.OAK_HERRINGBONE), conditionsFromItem(ModBlocks.OAK_HERRINGBONE))
+                        .offerTo(exporter, "oak_planks_from_oak_herringbone");
+
+                createShapeless(RecipeCategory.MISC, Blocks.SPRUCE_PLANKS)
+                        .input(ModBlocks.SPRUCE_HERRINGBONE)
+                        .criterion(hasItem(ModBlocks.SPRUCE_HERRINGBONE), conditionsFromItem(ModBlocks.SPRUCE_HERRINGBONE))
+                        .offerTo(exporter, "spruce_planks_from_spruce_herringbone");
+
+                createShapeless(RecipeCategory.MISC, Blocks.BIRCH_PLANKS)
+                        .input(ModBlocks.BIRCH_HERRINGBONE)
+                        .criterion(hasItem(ModBlocks.BIRCH_HERRINGBONE), conditionsFromItem(ModBlocks.BIRCH_HERRINGBONE))
+                        .offerTo(exporter, "birch_planks_from_birch_herringbone");
+
+                createShapeless(RecipeCategory.MISC, ModBlocks.ASPEN_PLANKS)
+                        .input(ModBlocks.ASPEN_HERRINGBONE)
+                        .criterion(hasItem(ModBlocks.ASPEN_HERRINGBONE), conditionsFromItem(ModBlocks.ASPEN_HERRINGBONE))
+                        .offerTo(exporter, "aspen_planks_from_aspen_herringbone");
+
+                createShapeless(RecipeCategory.MISC, Blocks.JUNGLE_PLANKS)
+                        .input(ModBlocks.JUNGLE_HERRINGBONE)
+                        .criterion(hasItem(ModBlocks.JUNGLE_HERRINGBONE), conditionsFromItem(ModBlocks.JUNGLE_HERRINGBONE))
+                        .offerTo(exporter, "jungle_planks_from_jungle_herringbone");
+
+                createShapeless(RecipeCategory.MISC, Blocks.ACACIA_PLANKS)
+                        .input(ModBlocks.ACACIA_HERRINGBONE)
+                        .criterion(hasItem(ModBlocks.ACACIA_HERRINGBONE), conditionsFromItem(ModBlocks.ACACIA_HERRINGBONE))
+                        .offerTo(exporter, "acacia_planks_from_acacia_herringbone");
+
+                createShapeless(RecipeCategory.MISC, Blocks.DARK_OAK_PLANKS)
+                        .input(ModBlocks.DARK_OAK_HERRINGBONE)
+                        .criterion(hasItem(ModBlocks.DARK_OAK_HERRINGBONE), conditionsFromItem(ModBlocks.DARK_OAK_HERRINGBONE))
+                        .offerTo(exporter, "dark_oak_planks_from_dark_oak_herringbone");
+
+                createShapeless(RecipeCategory.MISC, Blocks.MANGROVE_PLANKS)
+                        .input(ModBlocks.MANGROVE_HERRINGBONE)
+                        .criterion(hasItem(ModBlocks.MANGROVE_HERRINGBONE), conditionsFromItem(ModBlocks.MANGROVE_HERRINGBONE))
+                        .offerTo(exporter, "mangrove_planks_from_mangrove_herringbone");
+
+                createShapeless(RecipeCategory.MISC, Blocks.CHERRY_PLANKS)
+                        .input(ModBlocks.CHERRY_HERRINGBONE)
+                        .criterion(hasItem(ModBlocks.CHERRY_HERRINGBONE), conditionsFromItem(ModBlocks.CHERRY_HERRINGBONE))
+                        .offerTo(exporter, "cherry_planks_from_cherry_herringbone");
+
+                createShapeless(RecipeCategory.MISC, Blocks.PALE_OAK_PLANKS)
+                        .input(ModBlocks.PALE_OAK_HERRINGBONE)
+                        .criterion(hasItem(ModBlocks.PALE_OAK_HERRINGBONE), conditionsFromItem(ModBlocks.PALE_OAK_HERRINGBONE))
+                        .offerTo(exporter, "pale_oak_planks_from_pale_oak_herringbone");
+
+                createShapeless(RecipeCategory.MISC, Blocks.BAMBOO_PLANKS)
+                        .input(ModBlocks.BAMBOO_HERRINGBONE)
+                        .criterion(hasItem(ModBlocks.BAMBOO_HERRINGBONE), conditionsFromItem(ModBlocks.BAMBOO_HERRINGBONE))
+                        .offerTo(exporter, "bamboo_planks_from_bamboo_herringbone");
+
+                createShapeless(RecipeCategory.MISC, Blocks.CRIMSON_PLANKS)
+                        .input(ModBlocks.CRIMSON_HERRINGBONE)
+                        .criterion(hasItem(ModBlocks.CRIMSON_HERRINGBONE), conditionsFromItem(ModBlocks.CRIMSON_HERRINGBONE))
+                        .offerTo(exporter, "crimson_planks_from_crimson_herringbone");
+
+                createShapeless(RecipeCategory.MISC, Blocks.WARPED_PLANKS)
+                        .input(ModBlocks.WARPED_HERRINGBONE)
+                        .criterion(hasItem(ModBlocks.WARPED_HERRINGBONE), conditionsFromItem(ModBlocks.WARPED_HERRINGBONE))
+                        .offerTo(exporter, "warped_planks_from_warped_herringbone");
+
+
+                createShapeless(RecipeCategory.MISC, Blocks.OAK_PLANKS)
+                        .input(ModBlocks.OAK_MOSAIC)
+                        .criterion(hasItem(ModBlocks.OAK_MOSAIC), conditionsFromItem(ModBlocks.OAK_MOSAIC))
+                        .offerTo(exporter, "oak_planks_from_oak_mosaic");
+
+                createShapeless(RecipeCategory.MISC, Blocks.SPRUCE_PLANKS)
+                        .input(ModBlocks.SPRUCE_MOSAIC)
+                        .criterion(hasItem(ModBlocks.SPRUCE_MOSAIC), conditionsFromItem(ModBlocks.SPRUCE_MOSAIC))
+                        .offerTo(exporter, "spruce_planks_from_spruce_mosaic");
+
+                createShapeless(RecipeCategory.MISC, Blocks.BIRCH_PLANKS)
+                        .input(ModBlocks.BIRCH_MOSAIC)
+                        .criterion(hasItem(ModBlocks.BIRCH_MOSAIC), conditionsFromItem(ModBlocks.BIRCH_MOSAIC))
+                        .offerTo(exporter, "birch_planks_from_birch_mosaic");
+
+                createShapeless(RecipeCategory.MISC, ModBlocks.ASPEN_PLANKS)
+                        .input(ModBlocks.ASPEN_MOSAIC)
+                        .criterion(hasItem(ModBlocks.ASPEN_MOSAIC), conditionsFromItem(ModBlocks.ASPEN_MOSAIC))
+                        .offerTo(exporter, "aspen_planks_from_aspen_mosaic");
+
+                createShapeless(RecipeCategory.MISC, Blocks.JUNGLE_PLANKS)
+                        .input(ModBlocks.JUNGLE_MOSAIC)
+                        .criterion(hasItem(ModBlocks.JUNGLE_MOSAIC), conditionsFromItem(ModBlocks.JUNGLE_MOSAIC))
+                        .offerTo(exporter, "jungle_planks_from_jungle_mosaic");
+
+                createShapeless(RecipeCategory.MISC, Blocks.ACACIA_PLANKS)
+                        .input(ModBlocks.ACACIA_MOSAIC)
+                        .criterion(hasItem(ModBlocks.ACACIA_MOSAIC), conditionsFromItem(ModBlocks.ACACIA_MOSAIC))
+                        .offerTo(exporter, "acacia_planks_from_acacia_mosaic");
+
+                createShapeless(RecipeCategory.MISC, Blocks.DARK_OAK_PLANKS)
+                        .input(ModBlocks.DARK_OAK_MOSAIC)
+                        .criterion(hasItem(ModBlocks.DARK_OAK_MOSAIC), conditionsFromItem(ModBlocks.DARK_OAK_MOSAIC))
+                        .offerTo(exporter, "dark_oak_planks_from_dark_oak_mosaic");
+
+                createShapeless(RecipeCategory.MISC, Blocks.MANGROVE_PLANKS)
+                        .input(ModBlocks.MANGROVE_MOSAIC)
+                        .criterion(hasItem(ModBlocks.MANGROVE_MOSAIC), conditionsFromItem(ModBlocks.MANGROVE_MOSAIC))
+                        .offerTo(exporter, "mangrove_planks_from_mangrove_mosaic");
+
+                createShapeless(RecipeCategory.MISC, Blocks.CHERRY_PLANKS)
+                        .input(ModBlocks.CHERRY_MOSAIC)
+                        .criterion(hasItem(ModBlocks.CHERRY_MOSAIC), conditionsFromItem(ModBlocks.CHERRY_MOSAIC))
+                        .offerTo(exporter, "cherry_planks_from_cherry_mosaic");
+
+                createShapeless(RecipeCategory.MISC, Blocks.PALE_OAK_PLANKS)
+                        .input(ModBlocks.PALE_OAK_MOSAIC)
+                        .criterion(hasItem(ModBlocks.PALE_OAK_MOSAIC), conditionsFromItem(ModBlocks.PALE_OAK_MOSAIC))
+                        .offerTo(exporter, "pale_oak_planks_from_pale_oak_mosaic");
+
+                createShapeless(RecipeCategory.MISC, Blocks.BAMBOO_PLANKS)
+                        .input(Blocks.BAMBOO_MOSAIC)
+                        .criterion(hasItem(Blocks.BAMBOO_MOSAIC), conditionsFromItem(Blocks.BAMBOO_MOSAIC))
+                        .offerTo(exporter, "bamboo_planks_from_bamboo_mosaic");
+
+                createShapeless(RecipeCategory.MISC, Blocks.CRIMSON_PLANKS)
+                        .input(ModBlocks.CRIMSON_MOSAIC)
+                        .criterion(hasItem(ModBlocks.CRIMSON_MOSAIC), conditionsFromItem(ModBlocks.CRIMSON_MOSAIC))
+                        .offerTo(exporter, "crimson_planks_from_crimson_mosaic");
+
+                createShapeless(RecipeCategory.MISC, Blocks.WARPED_PLANKS)
+                        .input(ModBlocks.WARPED_MOSAIC)
+                        .criterion(hasItem(ModBlocks.WARPED_MOSAIC), conditionsFromItem(ModBlocks.WARPED_MOSAIC))
+                        .offerTo(exporter, "warped_planks_from_warped_mosaic");
 
                 createShaped(RecipeCategory.MISC, ModBlocks.CALCITE_BRICKS, 4)
                         .pattern("CC")
