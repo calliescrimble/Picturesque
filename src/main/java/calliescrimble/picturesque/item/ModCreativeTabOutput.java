@@ -256,7 +256,7 @@ public interface ModCreativeTabOutput {
     }
 
     private static void addColored(FabricCreativeModeTabOutput output) {
-        output.insertAfter(Blocks.PINK_TERRACOTTA,
+        output.insertAfter(Blocks.PINK_GLAZED_TERRACOTTA,
                 Blocks.BRICKS,
                 Blocks.BRICK_STAIRS,
                 Blocks.BRICK_SLAB,

@@ -143,6 +143,59 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 stonecutterResultFromBase(RecipeCategory.MISC, ModBlocks.AMETHYST_SLAB, Blocks.AMETHYST_BLOCK, 2);
                 stonecutterResultFromBase(RecipeCategory.MISC, ModBlocks.AMETHYST_WALL, Blocks.AMETHYST_BLOCK);
 
+                shapeless(RecipeCategory.MISC, Blocks.OAK_SAPLING)
+                        .requires(Blocks.OAK_LEAVES)
+                        .unlockedBy(getHasName(Blocks.OAK_LEAVES), has(Blocks.OAK_LEAVES))
+                        .save(output);
+                shapeless(RecipeCategory.MISC, Blocks.SPRUCE_SAPLING)
+                        .requires(Blocks.SPRUCE_LEAVES)
+                        .unlockedBy(getHasName(Blocks.SPRUCE_LEAVES), has(Blocks.SPRUCE_LEAVES))
+                        .save(output);
+                shapeless(RecipeCategory.MISC, Blocks.BIRCH_SAPLING)
+                        .requires(Blocks.BIRCH_LEAVES)
+                        .unlockedBy(getHasName(Blocks.BIRCH_LEAVES), has(Blocks.BIRCH_LEAVES))
+                        .save(output);
+                shapeless(RecipeCategory.MISC, ModBlocks.ASPEN_SAPLING)
+                        .requires(ModBlocks.ASPEN_LEAVES)
+                        .unlockedBy(getHasName(ModBlocks.ASPEN_LEAVES), has(ModBlocks.ASPEN_LEAVES))
+                        .save(output);
+                shapeless(RecipeCategory.MISC, Blocks.JUNGLE_SAPLING)
+                        .requires(Blocks.JUNGLE_LEAVES)
+                        .unlockedBy(getHasName(Blocks.JUNGLE_LEAVES), has(Blocks.JUNGLE_LEAVES))
+                        .save(output);
+                shapeless(RecipeCategory.MISC, Blocks.ACACIA_SAPLING)
+                        .requires(Blocks.ACACIA_LEAVES)
+                        .unlockedBy(getHasName(Blocks.ACACIA_LEAVES), has(Blocks.ACACIA_LEAVES))
+                        .save(output);
+                shapeless(RecipeCategory.MISC, Blocks.DARK_OAK_SAPLING)
+                        .requires(Blocks.DARK_OAK_LEAVES)
+                        .unlockedBy(getHasName(Blocks.DARK_OAK_LEAVES), has(Blocks.DARK_OAK_LEAVES))
+                        .save(output);
+                shapeless(RecipeCategory.MISC, Blocks.MANGROVE_PROPAGULE)
+                        .requires(Blocks.MANGROVE_LEAVES)
+                        .unlockedBy(getHasName(Blocks.MANGROVE_LEAVES), has(Blocks.MANGROVE_LEAVES))
+                        .save(output);
+                shapeless(RecipeCategory.MISC, Blocks.CHERRY_SAPLING)
+                        .requires(Blocks.CHERRY_LEAVES)
+                        .unlockedBy(getHasName(Blocks.CHERRY_LEAVES), has(Blocks.CHERRY_LEAVES))
+                        .save(output);
+                shapeless(RecipeCategory.MISC, ModBlocks.WHITE_CHERRY_SAPLING)
+                        .requires(ModBlocks.WHITE_CHERRY_LEAVES)
+                        .unlockedBy(getHasName(ModBlocks.WHITE_CHERRY_LEAVES), has(ModBlocks.WHITE_CHERRY_LEAVES))
+                        .save(output);
+                shapeless(RecipeCategory.MISC, Blocks.PALE_OAK_SAPLING)
+                        .requires(Blocks.PALE_OAK_LEAVES)
+                        .unlockedBy(getHasName(Blocks.PALE_OAK_LEAVES), has(Blocks.PALE_OAK_LEAVES))
+                        .save(output);
+                shapeless(RecipeCategory.MISC, Blocks.AZALEA)
+                        .requires(Blocks.AZALEA_LEAVES)
+                        .unlockedBy(getHasName(Blocks.AZALEA_LEAVES), has(Blocks.AZALEA_LEAVES))
+                        .save(output);
+                shapeless(RecipeCategory.MISC, Blocks.FLOWERING_AZALEA)
+                        .requires(Blocks.FLOWERING_AZALEA_LEAVES)
+                        .unlockedBy(getHasName(Blocks.FLOWERING_AZALEA_LEAVES), has(Blocks.FLOWERING_AZALEA_LEAVES))
+                        .save(output);
+
                 shapeless(RecipeCategory.MISC, ModBlocks.ASPEN_PLANKS, 4)
                         .requires(ModTags.Items.ASPEN_LOGS)
                         .unlockedBy(getHasName(ModBlocks.ASPEN_LOG), has(ModBlocks.ASPEN_LOG))
@@ -266,6 +319,112 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .define('P', ModBlocks.ASPEN_PLANKS)
                         .unlockedBy(getHasName(ModBlocks.ASPEN_PLANKS), has(ModBlocks.ASPEN_PLANKS))
                         .save(output);
+
+                shapeless(RecipeCategory.MISC, Blocks.OAK_PLANKS)
+                        .requires(ModBlocks.OAK_HERRINGBONE)
+                        .unlockedBy(getHasName(ModBlocks.OAK_HERRINGBONE), has(ModBlocks.OAK_HERRINGBONE))
+                        .save(output, "oak_planks_from_oak_herringbone");
+                shapeless(RecipeCategory.MISC, Blocks.SPRUCE_PLANKS)
+                        .requires(ModBlocks.SPRUCE_HERRINGBONE)
+                        .unlockedBy(getHasName(ModBlocks.SPRUCE_HERRINGBONE), has(ModBlocks.SPRUCE_HERRINGBONE))
+                        .save(output, "spruce_planks_from_spruce_herringbone");
+                shapeless(RecipeCategory.MISC, Blocks.BIRCH_PLANKS)
+                        .requires(ModBlocks.BIRCH_HERRINGBONE)
+                        .unlockedBy(getHasName(ModBlocks.BIRCH_HERRINGBONE), has(ModBlocks.BIRCH_HERRINGBONE))
+                        .save(output, "birch_planks_from_birch_herringbone");
+                shapeless(RecipeCategory.MISC, ModBlocks.ASPEN_PLANKS)
+                        .requires(ModBlocks.ASPEN_HERRINGBONE)
+                        .unlockedBy(getHasName(ModBlocks.ASPEN_HERRINGBONE), has(ModBlocks.ASPEN_HERRINGBONE))
+                        .save(output, "aspen_planks_from_aspen_herringbone");
+                shapeless(RecipeCategory.MISC, Blocks.JUNGLE_PLANKS)
+                        .requires(ModBlocks.JUNGLE_HERRINGBONE)
+                        .unlockedBy(getHasName(ModBlocks.JUNGLE_HERRINGBONE), has(ModBlocks.JUNGLE_HERRINGBONE))
+                        .save(output, "jungle_planks_from_jungle_herringbone");
+                shapeless(RecipeCategory.MISC, Blocks.ACACIA_PLANKS)
+                        .requires(ModBlocks.ACACIA_HERRINGBONE)
+                        .unlockedBy(getHasName(ModBlocks.ACACIA_HERRINGBONE), has(ModBlocks.ACACIA_HERRINGBONE))
+                        .save(output, "acacia_planks_from_acacia_herringbone");
+                shapeless(RecipeCategory.MISC, Blocks.DARK_OAK_PLANKS)
+                        .requires(ModBlocks.DARK_OAK_HERRINGBONE)
+                        .unlockedBy(getHasName(ModBlocks.DARK_OAK_HERRINGBONE), has(ModBlocks.DARK_OAK_HERRINGBONE))
+                        .save(output, "dark_oak_planks_from_dark_oak_herringbone");
+                shapeless(RecipeCategory.MISC, Blocks.MANGROVE_PLANKS)
+                        .requires(ModBlocks.MANGROVE_HERRINGBONE)
+                        .unlockedBy(getHasName(ModBlocks.MANGROVE_HERRINGBONE), has(ModBlocks.MANGROVE_HERRINGBONE))
+                        .save(output, "mangrove_planks_from_mangrove_herringbone");
+                shapeless(RecipeCategory.MISC, Blocks.CHERRY_PLANKS)
+                        .requires(ModBlocks.CHERRY_HERRINGBONE)
+                        .unlockedBy(getHasName(ModBlocks.CHERRY_HERRINGBONE), has(ModBlocks.CHERRY_HERRINGBONE))
+                        .save(output, "cherry_planks_from_cherry_herringbone");
+                shapeless(RecipeCategory.MISC, Blocks.PALE_OAK_PLANKS)
+                        .requires(ModBlocks.PALE_OAK_HERRINGBONE)
+                        .unlockedBy(getHasName(ModBlocks.PALE_OAK_HERRINGBONE), has(ModBlocks.PALE_OAK_HERRINGBONE))
+                        .save(output, "pale_oak_planks_from_pale_oak_herringbone");
+                shapeless(RecipeCategory.MISC, Blocks.BAMBOO_PLANKS)
+                        .requires(ModBlocks.BAMBOO_HERRINGBONE)
+                        .unlockedBy(getHasName(ModBlocks.BAMBOO_HERRINGBONE), has(ModBlocks.BAMBOO_HERRINGBONE))
+                        .save(output, "bamboo_planks_from_bamboo_herringbone");
+                shapeless(RecipeCategory.MISC, Blocks.CRIMSON_PLANKS)
+                        .requires(ModBlocks.CRIMSON_HERRINGBONE)
+                        .unlockedBy(getHasName(ModBlocks.CRIMSON_HERRINGBONE), has(ModBlocks.CRIMSON_HERRINGBONE))
+                        .save(output, "crimson_planks_from_crimson_herringbone");
+                shapeless(RecipeCategory.MISC, Blocks.WARPED_PLANKS)
+                        .requires(ModBlocks.WARPED_HERRINGBONE)
+                        .unlockedBy(getHasName(ModBlocks.WARPED_HERRINGBONE), has(ModBlocks.WARPED_HERRINGBONE))
+                        .save(output, "warped_planks_from_warped_herringbone");
+
+                shapeless(RecipeCategory.MISC, Blocks.OAK_PLANKS)
+                        .requires(ModBlocks.OAK_MOSAIC)
+                        .unlockedBy(getHasName(ModBlocks.OAK_MOSAIC), has(ModBlocks.OAK_MOSAIC))
+                        .save(output, "oak_planks_from_oak_mosaic");
+                shapeless(RecipeCategory.MISC, Blocks.SPRUCE_PLANKS)
+                        .requires(ModBlocks.SPRUCE_MOSAIC)
+                        .unlockedBy(getHasName(ModBlocks.SPRUCE_MOSAIC), has(ModBlocks.SPRUCE_MOSAIC))
+                        .save(output, "spruce_planks_from_spruce_mosaic");
+                shapeless(RecipeCategory.MISC, Blocks.BIRCH_PLANKS)
+                        .requires(ModBlocks.BIRCH_MOSAIC)
+                        .unlockedBy(getHasName(ModBlocks.BIRCH_MOSAIC), has(ModBlocks.BIRCH_MOSAIC))
+                        .save(output, "birch_planks_from_birch_mosaic");
+                shapeless(RecipeCategory.MISC, ModBlocks.ASPEN_PLANKS)
+                        .requires(ModBlocks.ASPEN_MOSAIC)
+                        .unlockedBy(getHasName(ModBlocks.ASPEN_MOSAIC), has(ModBlocks.ASPEN_MOSAIC))
+                        .save(output, "aspen_planks_from_aspen_mosaic");
+                shapeless(RecipeCategory.MISC, Blocks.JUNGLE_PLANKS)
+                        .requires(ModBlocks.JUNGLE_MOSAIC)
+                        .unlockedBy(getHasName(ModBlocks.JUNGLE_MOSAIC), has(ModBlocks.JUNGLE_MOSAIC))
+                        .save(output, "jungle_planks_from_jungle_mosaic");
+                shapeless(RecipeCategory.MISC, Blocks.ACACIA_PLANKS)
+                        .requires(ModBlocks.ACACIA_MOSAIC)
+                        .unlockedBy(getHasName(ModBlocks.ACACIA_MOSAIC), has(ModBlocks.ACACIA_MOSAIC))
+                        .save(output, "acacia_planks_from_acacia_mosaic");
+                shapeless(RecipeCategory.MISC, Blocks.DARK_OAK_PLANKS)
+                        .requires(ModBlocks.DARK_OAK_MOSAIC)
+                        .unlockedBy(getHasName(ModBlocks.DARK_OAK_MOSAIC), has(ModBlocks.DARK_OAK_MOSAIC))
+                        .save(output, "dark_oak_planks_from_dark_oak_mosaic");
+                shapeless(RecipeCategory.MISC, Blocks.MANGROVE_PLANKS)
+                        .requires(ModBlocks.MANGROVE_MOSAIC)
+                        .unlockedBy(getHasName(ModBlocks.MANGROVE_MOSAIC), has(ModBlocks.MANGROVE_MOSAIC))
+                        .save(output, "mangrove_planks_from_mangrove_mosaic");
+                shapeless(RecipeCategory.MISC, Blocks.CHERRY_PLANKS)
+                        .requires(ModBlocks.CHERRY_MOSAIC)
+                        .unlockedBy(getHasName(ModBlocks.CHERRY_MOSAIC), has(ModBlocks.CHERRY_MOSAIC))
+                        .save(output, "cherry_planks_from_cherry_mosaic");
+                shapeless(RecipeCategory.MISC, Blocks.PALE_OAK_PLANKS)
+                        .requires(ModBlocks.PALE_OAK_MOSAIC)
+                        .unlockedBy(getHasName(ModBlocks.PALE_OAK_MOSAIC), has(ModBlocks.PALE_OAK_MOSAIC))
+                        .save(output, "pale_oak_planks_from_pale_oak_mosaic");
+                shapeless(RecipeCategory.MISC, Blocks.BAMBOO_PLANKS)
+                        .requires(Blocks.BAMBOO_MOSAIC)
+                        .unlockedBy(getHasName(Blocks.BAMBOO_MOSAIC), has(Blocks.BAMBOO_MOSAIC))
+                        .save(output, "bamboo_planks_from_bamboo_mosaic");
+                shapeless(RecipeCategory.MISC, Blocks.CRIMSON_PLANKS)
+                        .requires(ModBlocks.CRIMSON_MOSAIC)
+                        .unlockedBy(getHasName(ModBlocks.CRIMSON_MOSAIC), has(ModBlocks.CRIMSON_MOSAIC))
+                        .save(output, "crimson_planks_from_crimson_mosaic");
+                shapeless(RecipeCategory.MISC, Blocks.WARPED_PLANKS)
+                        .requires(ModBlocks.WARPED_MOSAIC)
+                        .unlockedBy(getHasName(ModBlocks.WARPED_MOSAIC), has(ModBlocks.WARPED_MOSAIC))
+                        .save(output, "warped_planks_from_warped_mosaic");
 
                 shaped(RecipeCategory.MISC, ModBlocks.CALCITE_BRICKS, 4)
                         .pattern("CC")
