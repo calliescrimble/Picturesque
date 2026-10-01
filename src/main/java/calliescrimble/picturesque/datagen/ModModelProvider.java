@@ -62,6 +62,7 @@ public class ModModelProvider extends FabricModelProvider {
         BlockModelGenerators.BlockFamilyProvider crimsonMosaicPool = blockStateModelGenerator.family(ModBlocks.CRIMSON_MOSAIC);
         BlockModelGenerators.BlockFamilyProvider warpedMosaicPool = blockStateModelGenerator.family(ModBlocks.WARPED_MOSAIC);
         BlockModelGenerators.BlockFamilyProvider aspenMosaicPool = blockStateModelGenerator.family(ModBlocks.ASPEN_MOSAIC);
+        BlockModelGenerators.BlockFamilyProvider poplarMosaicPool = blockStateModelGenerator.family(ModBlocks.POPLAR_MOSAIC);
 
         blockStateModelGenerator.family(ASPEN_BLOCK_FAMILY.getBaseBlock()).generateFor(ASPEN_BLOCK_FAMILY);
         blockStateModelGenerator.woodProvider(ModBlocks.ASPEN_LOG).logWithHorizontal(ModBlocks.ASPEN_LOG).wood(ModBlocks.ASPEN_WOOD);
@@ -83,6 +84,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.createTrivialCube(ModBlocks.CRIMSON_HERRINGBONE);
         blockStateModelGenerator.createTrivialCube(ModBlocks.WARPED_HERRINGBONE);
         blockStateModelGenerator.createTrivialCube(ModBlocks.ASPEN_HERRINGBONE);
+        blockStateModelGenerator.createTrivialCube(ModBlocks.POPLAR_HERRINGBONE);
 
         oakMosaicPool.stairs(ModBlocks.OAK_MOSAIC_STAIRS);
         oakMosaicPool.slab(ModBlocks.OAK_MOSAIC_SLAB);
@@ -108,6 +110,8 @@ public class ModModelProvider extends FabricModelProvider {
         warpedMosaicPool.slab(ModBlocks.WARPED_MOSAIC_SLAB);
         aspenMosaicPool.stairs(ModBlocks.ASPEN_MOSAIC_STAIRS);
         aspenMosaicPool.slab(ModBlocks.ASPEN_MOSAIC_SLAB);
+        poplarMosaicPool.stairs(ModBlocks.POPLAR_MOSAIC_STAIRS);
+        poplarMosaicPool.slab(ModBlocks.POPLAR_MOSAIC_SLAB);
         calcitePool.stairs(ModBlocks.CALCITE_STAIRS);
         calcitePool.slab(ModBlocks.CALCITE_SLAB);
         calcitePool.wall(ModBlocks.CALCITE_WALL);
@@ -236,6 +240,9 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.createTrivialBlock(ModBlocks.CHERRY_LEAF_PILE, TexturedModel.CARPET);
         blockStateModelGenerator.createTrivialBlock(ModBlocks.WHITE_CHERRY_LEAF_PILE, TexturedModel.CARPET);
         blockStateModelGenerator.createTrivialBlock(ModBlocks.PALE_OAK_LEAF_PILE, TexturedModel.CARPET);
+        blockStateModelGenerator.createTrivialBlock(ModBlocks.RED_POPLAR_LEAF_PILE, TexturedModel.CARPET);
+        blockStateModelGenerator.createTrivialBlock(ModBlocks.ORANGE_POPLAR_LEAF_PILE, TexturedModel.CARPET);
+        blockStateModelGenerator.createTrivialBlock(ModBlocks.YELLOW_POPLAR_LEAF_PILE, TexturedModel.CARPET);
 
     }
 

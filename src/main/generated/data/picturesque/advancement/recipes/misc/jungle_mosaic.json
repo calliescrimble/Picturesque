@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "picturesque:jungle_mosaic"
+        "recipes": "picturesque:jungle_mosaic"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

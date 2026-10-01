@@ -18,6 +18,7 @@
     "picturesque:crimson_herringbone",
     "picturesque:warped_herringbone",
     "picturesque:aspen_herringbone",
+    "picturesque:poplar_herringbone",
     "picturesque:oak_mosaic",
     "picturesque:spruce_mosaic",
     "picturesque:birch_mosaic",
@@ -29,6 +30,7 @@
     "picturesque:pale_oak_mosaic",
     "picturesque:crimson_mosaic",
     "picturesque:warped_mosaic",
-    "picturesque:aspen_mosaic"
+    "picturesque:aspen_mosaic",
+    "picturesque:poplar_mosaic"
   ]
 }

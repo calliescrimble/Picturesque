@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "picturesque:flowering_azalea_leaf_pile"
+        "recipes": "picturesque:flowering_azalea_leaf_pile"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

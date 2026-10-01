@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "picturesque:white_cherry_leaf_pile"
+        "recipes": "picturesque:white_cherry_leaf_pile"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

@@ -60,6 +60,9 @@ public interface ModCreativeTabOutput {
         output.insertAfter(ModBlocks.ASPEN_PLANKS,
                 ModBlocks.ASPEN_HERRINGBONE,
                 ModBlocks.ASPEN_MOSAIC);
+        output.insertAfter(Blocks.POPLAR_PLANKS,
+                ModBlocks.POPLAR_HERRINGBONE,
+                ModBlocks.POPLAR_MOSAIC);
         output.insertAfter(Blocks.OAK_STAIRS,
                 ModBlocks.OAK_MOSAIC_STAIRS);
         output.insertAfter(Blocks.OAK_SLAB,
@@ -108,6 +111,10 @@ public interface ModCreativeTabOutput {
                 ModBlocks.ASPEN_MOSAIC_STAIRS);
         output.insertAfter(ModBlocks.ASPEN_SLAB,
                 ModBlocks.ASPEN_MOSAIC_SLAB);
+        output.insertAfter(Blocks.POPLAR_STAIRS,
+                ModBlocks.POPLAR_MOSAIC_STAIRS);
+        output.insertAfter(Blocks.POPLAR_SLAB,
+                ModBlocks.POPLAR_MOSAIC_SLAB);
         output.insertAfter(Blocks.POLISHED_GRANITE_SLAB,
                 ModBlocks.POLISHED_GRANITE_WALL,
                 ModBlocks.POLISHED_GRANITE_BRICKS,
@@ -233,7 +240,10 @@ public interface ModCreativeTabOutput {
                 ModBlocks.WHITE_CHERRY_LEAF_PILE,
                 ModBlocks.PALE_OAK_LEAF_PILE,
                 ModBlocks.AZALEA_LEAF_PILE,
-                ModBlocks.FLOWERING_AZALEA_LEAF_PILE);
+                ModBlocks.FLOWERING_AZALEA_LEAF_PILE,
+                ModBlocks.RED_POPLAR_LEAF_PILE,
+                ModBlocks.ORANGE_POPLAR_LEAF_PILE,
+                ModBlocks.YELLOW_POPLAR_LEAF_PILE);
         output.insertAfter(Blocks.BIRCH_LOG,
                 ModBlocks.ASPEN_LOG);
         output.insertAfter(Blocks.BIRCH_LEAVES,

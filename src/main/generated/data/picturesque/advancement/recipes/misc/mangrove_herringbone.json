@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "picturesque:mangrove_herringbone"
+        "recipes": "picturesque:mangrove_herringbone"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

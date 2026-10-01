@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "picturesque:aspen_planks_from_aspen_herringbone"
+        "recipes": "picturesque:aspen_planks_from_aspen_herringbone"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

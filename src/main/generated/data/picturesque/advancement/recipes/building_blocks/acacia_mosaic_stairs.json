@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "picturesque:acacia_mosaic_stairs"
+        "recipes": "picturesque:acacia_mosaic_stairs"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

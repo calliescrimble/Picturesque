@@ -2,6 +2,7 @@ package calliescrimble.picturesque.item;
 
 import calliescrimble.picturesque.Picturesque;
 import calliescrimble.picturesque.block.ModBlocks;
+import net.minecraft.core.Direction;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -10,7 +11,8 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.BoatItem;
 import net.minecraft.world.item.HangingSignItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.SignItem;
+import net.minecraft.world.item.StandingAndWallBlockItem;
+
 import java.util.function.Function;
 
 public class ModItems {
@@ -19,7 +21,7 @@ public class ModItems {
             .stacksTo(1)));
     public static final Item ASPEN_CHEST_BOAT = registerItem("aspen_chest_boat", settings -> new BoatItem(ModEntityTypes.ASPEN_CHEST_BOAT, settings
             .stacksTo(1)));
-    public static final Item ASPEN_SIGN = registerItem("aspen_sign", settings -> new SignItem(ModBlocks.ASPEN_SIGN, ModBlocks.ASPEN_WALL_SIGN, settings
+    public static final Item ASPEN_SIGN = registerItem("aspen_sign", settings -> new StandingAndWallBlockItem(ModBlocks.ASPEN_SIGN, ModBlocks.ASPEN_WALL_SIGN, Direction.DOWN, settings
             .useBlockDescriptionPrefix().stacksTo(16)));
     public static final Item ASPEN_HANGING_SIGN = registerItem("aspen_hanging_sign", settings -> new HangingSignItem(ModBlocks.ASPEN_HANGING_SIGN, ModBlocks.ASPEN_WALL_HANGING_SIGN, settings
             .useBlockDescriptionPrefix().stacksTo(16)));

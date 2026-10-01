@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "picturesque:aspen_button"
+        "recipes": "picturesque:aspen_button"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "picturesque:light_blue_brick_wall_from_light_blue_bricks_stonecutting"
+        "recipes": "picturesque:light_blue_brick_wall_from_light_blue_bricks_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

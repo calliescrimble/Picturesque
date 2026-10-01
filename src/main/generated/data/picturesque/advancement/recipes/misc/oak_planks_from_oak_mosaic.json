@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "picturesque:oak_planks_from_oak_mosaic"
+        "recipes": "picturesque:oak_planks_from_oak_mosaic"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

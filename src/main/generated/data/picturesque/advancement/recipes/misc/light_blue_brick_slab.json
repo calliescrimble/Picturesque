@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "picturesque:light_blue_brick_slab"
+        "recipes": "picturesque:light_blue_brick_slab"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

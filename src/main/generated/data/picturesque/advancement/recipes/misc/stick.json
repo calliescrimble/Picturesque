@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "picturesque:stick"
+        "recipes": "picturesque:stick"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

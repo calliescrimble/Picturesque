@@ -3,10 +3,10 @@ package calliescrimble.picturesque.block;
 import calliescrimble.picturesque.Picturesque;
 import calliescrimble.picturesque.particle.ModParticles;
 import calliescrimble.picturesque.world.tree.ModSaplingGenerators;
+import net.fabricmc.fabric.api.item.v1.BlockTransformerHelper;
 import net.fabricmc.fabric.api.object.builder.v1.block.type.BlockSetTypeBuilder;
 import net.fabricmc.fabric.api.object.builder.v1.block.type.WoodTypeBuilder;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
-import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -40,6 +40,7 @@ import net.minecraft.world.level.block.WallBlock;
 import net.minecraft.world.level.block.WallHangingSignBlock;
 import net.minecraft.world.level.block.WallSignBlock;
 import net.minecraft.world.level.block.entity.BlockEntityTypes;
+import net.minecraft.world.level.block.sounds.AmbientLeavesBlockSoundPlayer;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.WoodType;
@@ -139,9 +140,9 @@ public class ModBlocks {
                     .noOcclusion()
                     .isValidSpawn(Blocks::ocelotOrParrot)
                     .isSuffocating(Blocks::never)
-                    .isViewBlocking(Blocks::never)
+                    .isViewBlocking((state, world, pos, box) -> false)
                     .ignitedByLava()
-                    .pushReaction(PushReaction.DESTROY)
+                    .pushReaction(PushReaction.POPPED)
                     .isRedstoneConductor(Blocks::never)));
     public static final Block ASPEN_SAPLING = registerBlock("aspen_sapling",
             properties -> new SaplingBlock(ModSaplingGenerators.ASPEN, properties
@@ -150,12 +151,12 @@ public class ModBlocks {
                     .randomTicks()
                     .instabreak()
                     .sound(SoundType.GRASS)
-                    .pushReaction(PushReaction.DESTROY)));
+                    .pushReaction(PushReaction.POPPED)));
     public static final Block ASPEN_SAPLING_POT = registerBlockWithoutBlockItem("aspen_sapling_pot",
             properties -> new FlowerPotBlock(ModBlocks.ASPEN_SAPLING, properties
                     .instabreak()
                     .noOcclusion()
-                    .pushReaction(PushReaction.DESTROY)));
+                    .pushReaction(PushReaction.POPPED)));
     public static final Block ASPEN_SHELF = registerBlock("aspen_shelf",
             properties -> new ShelfBlock(properties
             .mapColor(MapColor.DIRT)
@@ -270,6 +271,12 @@ public class ModBlocks {
                     .strength(2f, 3f)
                     .sound(SoundType.WOOD)
                     .ignitedByLava()));
+    public static final Block POPLAR_HERRINGBONE = registerBlock("poplar_herringbone",
+            properties -> new Block(properties
+                    .mapColor(MapColor.COLOR_LIGHT_GRAY)
+                    .strength(2f, 3f)
+                    .sound(SoundType.WOOD)
+                    .ignitedByLava()));
     public static final Block OAK_MOSAIC = registerBlock("oak_mosaic",
             properties -> new Block(properties
                     .mapColor(MapColor.WOOD)
@@ -339,6 +346,12 @@ public class ModBlocks {
     public static final Block ASPEN_MOSAIC = registerBlock("aspen_mosaic",
             properties -> new Block(properties
                     .mapColor(MapColor.DIRT)
+                    .strength(2f, 3f)
+                    .sound(SoundType.WOOD)
+                    .ignitedByLava()));
+    public static final Block POPLAR_MOSAIC = registerBlock("poplar_mosaic",
+            properties -> new Block(properties
+                    .mapColor(MapColor.COLOR_LIGHT_GRAY)
                     .strength(2f, 3f)
                     .sound(SoundType.WOOD)
                     .ignitedByLava()));
@@ -414,6 +427,12 @@ public class ModBlocks {
                     .strength(2f, 3f)
                     .sound(SoundType.WOOD)
                     .ignitedByLava()));
+    public static final Block POPLAR_MOSAIC_SLAB = registerBlock("poplar_mosaic_slab",
+            properties -> new SlabBlock(properties
+                    .mapColor(MapColor.COLOR_LIGHT_GRAY)
+                    .strength(2f, 3f)
+                    .sound(SoundType.WOOD)
+                    .ignitedByLava()));
     public static final Block OAK_MOSAIC_STAIRS = registerBlock("oak_mosaic_stairs",
             properties -> new StairBlock(ModBlocks.OAK_MOSAIC.defaultBlockState(), properties
                     .mapColor(MapColor.WOOD)
@@ -483,6 +502,12 @@ public class ModBlocks {
     public static final Block ASPEN_MOSAIC_STAIRS = registerBlock("aspen_mosaic_stairs",
             properties -> new StairBlock(ModBlocks.ASPEN_MOSAIC.defaultBlockState(), properties
                     .mapColor(MapColor.DIRT)
+                    .strength(2f, 3f)
+                    .sound(SoundType.WOOD)
+                    .ignitedByLava()));
+    public static final Block POPLAR_MOSAIC_STAIRS = registerBlock("poplar_mosaic_stairs",
+            properties -> new StairBlock(ModBlocks.POPLAR_MOSAIC.defaultBlockState(), properties
+                    .mapColor(MapColor.COLOR_LIGHT_GRAY)
                     .strength(2f, 3f)
                     .sound(SoundType.WOOD)
                     .ignitedByLava()));
@@ -1082,12 +1107,12 @@ public class ModBlocks {
                     .instabreak()
                     .sound(SoundType.GRASS)
                     .offsetType(BlockBehaviour.OffsetType.XZ)
-                    .pushReaction(PushReaction.DESTROY)));
+                    .pushReaction(PushReaction.POPPED)));
     public static final Block MARIGOLD_POT = registerBlockWithoutBlockItem("marigold_pot",
            properties -> new FlowerPotBlock(ModBlocks.MARIGOLD, properties
                    .instabreak()
                    .noOcclusion()
-                   .pushReaction(PushReaction.DESTROY)));
+                   .pushReaction(PushReaction.POPPED)));
     public static final Block VIOLET_HEATHER = registerBlock("violet_heather",
             properties -> new FlowerBlock(MobEffects.SPEED, 5f, properties
                     .mapColor(MapColor.CRIMSON_HYPHAE)
@@ -1095,7 +1120,7 @@ public class ModBlocks {
                     .instabreak()
                     .sound(SoundType.GRASS)
                     .offsetType(BlockBehaviour.OffsetType.XZ)
-                    .pushReaction(PushReaction.DESTROY)));
+                    .pushReaction(PushReaction.POPPED)));
     public static final Block MAUVE_HEATHER = registerBlock("mauve_heather",
             properties -> new FlowerBlock(MobEffects.SPEED, 5f, properties
                     .mapColor(MapColor.ICE)
@@ -1103,7 +1128,7 @@ public class ModBlocks {
                     .instabreak()
                     .sound(SoundType.GRASS)
                     .offsetType(BlockBehaviour.OffsetType.XZ)
-                    .pushReaction(PushReaction.DESTROY)));
+                    .pushReaction(PushReaction.POPPED)));
     public static final Block WHITE_HEATHER = registerBlock("white_heather",
             properties -> new FlowerBlock(MobEffects.SPEED, 5f, properties
                     .mapColor(MapColor.SNOW)
@@ -1111,7 +1136,7 @@ public class ModBlocks {
                     .instabreak()
                     .sound(SoundType.GRASS)
                     .offsetType(BlockBehaviour.OffsetType.XZ)
-                    .pushReaction(PushReaction.DESTROY)));
+                    .pushReaction(PushReaction.POPPED)));
     public static final Block AMETHYST_STAIRS = registerBlock("amethyst_stairs",
             properties -> new StairBlock(Blocks.AMETHYST_BLOCK.defaultBlockState(), properties
                     .mapColor(MapColor.COLOR_PURPLE)
@@ -1132,7 +1157,7 @@ public class ModBlocks {
                     .sound(SoundType.AMETHYST)));
 
     public static final Block WHITE_CHERRY_LEAVES = registerBlock("white_cherry_leaves",
-            properties -> new UntintedParticleLeavesBlock(0.1f, ModParticles.WHITE_CHERRY_PETAL, properties
+            properties -> new UntintedParticleLeavesBlock(0.1f, ModParticles.WHITE_CHERRY_PETAL, AmbientLeavesBlockSoundPlayer.noAmbientSound(), properties
                     .mapColor(MapColor.SNOW)
                     .strength(0.2f)
                     .randomTicks()
@@ -1140,9 +1165,9 @@ public class ModBlocks {
                     .noOcclusion()
                     .isValidSpawn(Blocks::ocelotOrParrot)
                     .isSuffocating(Blocks::never)
-                    .isViewBlocking(Blocks::never)
+                    .isViewBlocking((state, world, pos, box) -> false)
                     .ignitedByLava()
-                    .pushReaction(PushReaction.DESTROY)
+                    .pushReaction(PushReaction.POPPED)
                     .isRedstoneConductor(Blocks::never)));
     public static final Block WHITE_CHERRY_SAPLING = registerBlock("white_cherry_sapling",
             properties -> new SaplingBlock(ModSaplingGenerators.WHITE_CHERRY, properties
@@ -1151,12 +1176,12 @@ public class ModBlocks {
                     .randomTicks()
                     .instabreak()
                     .sound(SoundType.CHERRY_SAPLING)
-                    .pushReaction(PushReaction.DESTROY)));
+                    .pushReaction(PushReaction.POPPED)));
     public static final Block WHITE_CHERRY_SAPLING_POT = registerBlockWithoutBlockItem("white_cherry_sapling_pot",
             properties -> new FlowerPotBlock(ModBlocks.WHITE_CHERRY_SAPLING, properties
                     .instabreak()
                     .noOcclusion()
-                    .pushReaction(PushReaction.DESTROY)));
+                    .pushReaction(PushReaction.POPPED)));
     public static final Block OAK_LEAF_PILE = registerBlock("oak_leaf_pile",
             properties -> new CarpetBlock(properties
                     .mapColor(MapColor.PLANT)
@@ -1164,7 +1189,7 @@ public class ModBlocks {
                     .sound(SoundType.GRASS)
                     .noOcclusion()
                     .ignitedByLava()
-                    .pushReaction(PushReaction.DESTROY)));
+                    .pushReaction(PushReaction.POPPED)));
     public static final Block SPRUCE_LEAF_PILE = registerBlock("spruce_leaf_pile",
             properties -> new CarpetBlock(properties
                     .mapColor(MapColor.PLANT)
@@ -1172,7 +1197,7 @@ public class ModBlocks {
                     .sound(SoundType.GRASS)
                     .noOcclusion()
                     .ignitedByLava()
-                    .pushReaction(PushReaction.DESTROY)));
+                    .pushReaction(PushReaction.POPPED)));
     public static final Block BIRCH_LEAF_PILE = registerBlock("birch_leaf_pile",
             properties -> new CarpetBlock(properties
                     .mapColor(MapColor.PLANT)
@@ -1180,7 +1205,7 @@ public class ModBlocks {
                     .sound(SoundType.GRASS)
                     .noOcclusion()
                     .ignitedByLava()
-                    .pushReaction(PushReaction.DESTROY)));
+                    .pushReaction(PushReaction.POPPED)));
     public static final Block ASPEN_LEAF_PILE = registerBlock("aspen_leaf_pile",
             properties -> new CarpetBlock(properties
                     .mapColor(MapColor.GOLD)
@@ -1188,7 +1213,7 @@ public class ModBlocks {
                     .sound(SoundType.GRASS)
                     .noOcclusion()
                     .ignitedByLava()
-                    .pushReaction(PushReaction.DESTROY)));
+                    .pushReaction(PushReaction.POPPED)));
     public static final Block JUNGLE_LEAF_PILE = registerBlock("jungle_leaf_pile",
             properties -> new CarpetBlock(properties
                     .mapColor(MapColor.PLANT)
@@ -1196,7 +1221,7 @@ public class ModBlocks {
                     .sound(SoundType.GRASS)
                     .noOcclusion()
                     .ignitedByLava()
-                    .pushReaction(PushReaction.DESTROY)));
+                    .pushReaction(PushReaction.POPPED)));
     public static final Block ACACIA_LEAF_PILE = registerBlock("acacia_leaf_pile",
             properties -> new CarpetBlock(properties
                     .mapColor(MapColor.PLANT)
@@ -1204,7 +1229,7 @@ public class ModBlocks {
                     .sound(SoundType.GRASS)
                     .noOcclusion()
                     .ignitedByLava()
-                    .pushReaction(PushReaction.DESTROY)));
+                    .pushReaction(PushReaction.POPPED)));
     public static final Block DARK_OAK_LEAF_PILE = registerBlock("dark_oak_leaf_pile",
             properties -> new CarpetBlock(properties
                     .mapColor(MapColor.PLANT)
@@ -1212,7 +1237,7 @@ public class ModBlocks {
                     .sound(SoundType.GRASS)
                     .noOcclusion()
                     .ignitedByLava()
-                    .pushReaction(PushReaction.DESTROY)));
+                    .pushReaction(PushReaction.POPPED)));
     public static final Block MANGROVE_LEAF_PILE = registerBlock("mangrove_leaf_pile",
             properties -> new CarpetBlock(properties
                     .mapColor(MapColor.PLANT)
@@ -1220,7 +1245,7 @@ public class ModBlocks {
                     .sound(SoundType.GRASS)
                     .noOcclusion()
                     .ignitedByLava()
-                    .pushReaction(PushReaction.DESTROY)));
+                    .pushReaction(PushReaction.POPPED)));
     public static final Block AZALEA_LEAF_PILE = registerBlock("azalea_leaf_pile",
             properties -> new CarpetBlock(properties
                     .mapColor(MapColor.PLANT)
@@ -1228,7 +1253,7 @@ public class ModBlocks {
                     .sound(SoundType.AZALEA_LEAVES)
                     .noOcclusion()
                     .ignitedByLava()
-                    .pushReaction(PushReaction.DESTROY)));
+                    .pushReaction(PushReaction.POPPED)));
     public static final Block FLOWERING_AZALEA_LEAF_PILE = registerBlock("flowering_azalea_leaf_pile",
             properties -> new CarpetBlock(properties
                     .mapColor(MapColor.PLANT)
@@ -1236,7 +1261,7 @@ public class ModBlocks {
                     .sound(SoundType.FLOWERING_AZALEA)
                     .noOcclusion()
                     .ignitedByLava()
-                    .pushReaction(PushReaction.DESTROY)));
+                    .pushReaction(PushReaction.POPPED)));
     public static final Block CHERRY_LEAF_PILE = registerBlock("cherry_leaf_pile",
             properties -> new CarpetBlock(properties
                     .mapColor(MapColor.COLOR_PINK)
@@ -1244,7 +1269,7 @@ public class ModBlocks {
                     .sound(SoundType.CHERRY_LEAVES)
                     .noOcclusion()
                     .ignitedByLava()
-                    .pushReaction(PushReaction.DESTROY)));
+                    .pushReaction(PushReaction.POPPED)));
     public static final Block WHITE_CHERRY_LEAF_PILE = registerBlock("white_cherry_leaf_pile",
             properties -> new CarpetBlock(properties
                     .mapColor(MapColor.SNOW)
@@ -1252,7 +1277,7 @@ public class ModBlocks {
                     .sound(SoundType.CHERRY_LEAVES)
                     .noOcclusion()
                     .ignitedByLava()
-                    .pushReaction(PushReaction.DESTROY)));
+                    .pushReaction(PushReaction.POPPED)));
     public static final Block PALE_OAK_LEAF_PILE = registerBlock("pale_oak_leaf_pile",
             properties -> new CarpetBlock(properties
                     .mapColor(MapColor.METAL)
@@ -1260,13 +1285,37 @@ public class ModBlocks {
                     .sound(SoundType.GRASS)
                     .noOcclusion()
                     .ignitedByLava()
-                    .pushReaction(PushReaction.DESTROY)));
+                    .pushReaction(PushReaction.POPPED)));
+    public static final Block RED_POPLAR_LEAF_PILE = registerBlock("red_poplar_leaf_pile",
+            properties -> new CarpetBlock(properties
+                    .mapColor(MapColor.COLOR_RED)
+                    .strength(0.2f)
+                    .sound(SoundType.POPLAR_LEAVES)
+                    .noOcclusion()
+                    .ignitedByLava()
+                    .pushReaction(PushReaction.POPPED)));
+    public static final Block ORANGE_POPLAR_LEAF_PILE = registerBlock("orange_poplar_leaf_pile",
+            properties -> new CarpetBlock(properties
+                    .mapColor(MapColor.COLOR_ORANGE)
+                    .strength(0.2f)
+                    .sound(SoundType.POPLAR_LEAVES)
+                    .noOcclusion()
+                    .ignitedByLava()
+                    .pushReaction(PushReaction.POPPED)));
+    public static final Block YELLOW_POPLAR_LEAF_PILE = registerBlock("yellow_poplar_leaf_pile",
+            properties -> new CarpetBlock(properties
+                    .mapColor(MapColor.COLOR_YELLOW)
+                    .strength(0.2f)
+                    .sound(SoundType.POPLAR_LEAVES)
+                    .noOcclusion()
+                    .ignitedByLava()
+                    .pushReaction(PushReaction.POPPED)));
     public static final Block REDSTONE_LANTERN = registerBlock("redstone_lantern",
             properties -> new LanternBlock(properties
                     .mapColor(MapColor.METAL)
                     .strength(3.5f, 3.5f)
                     .sound(SoundType.LANTERN)
-                    .pushReaction(PushReaction.DESTROY)
+                    .pushReaction(PushReaction.POPPED)
                     .lightLevel(state -> 8)));
     public static final Block CALLIE_PLUSHIE = registerBlock("callie_plushie",
             properties -> new CalliePlushieBlock(properties
@@ -1304,8 +1353,8 @@ public class ModBlocks {
 
     public static void initialize() {
 
-        StrippableBlockRegistry.register(ModBlocks.ASPEN_LOG, ModBlocks.STRIPPED_ASPEN_LOG);
-        StrippableBlockRegistry.register(ModBlocks.ASPEN_WOOD, ModBlocks.STRIPPED_ASPEN_WOOD);
+        BlockTransformerHelper.registerStripping(ModBlocks.ASPEN_LOG, ModBlocks.STRIPPED_ASPEN_LOG);
+        BlockTransformerHelper.registerStripping(ModBlocks.ASPEN_WOOD, ModBlocks.STRIPPED_ASPEN_WOOD);
 
         BlockEntityTypes.SHELF.addValidBlock(ModBlocks.ASPEN_SHELF);
         BlockEntityTypes.SIGN.addValidBlock(ModBlocks.ASPEN_SIGN);
@@ -1335,6 +1384,9 @@ public class ModBlocks {
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.CHERRY_LEAF_PILE, 30, 60);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.WHITE_CHERRY_LEAF_PILE, 30, 60);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.PALE_OAK_LEAF_PILE, 30, 60);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.RED_POPLAR_LEAF_PILE, 30, 60);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.ORANGE_POPLAR_LEAF_PILE, 30, 60);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.YELLOW_POPLAR_LEAF_PILE, 30, 60);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.AZALEA_LEAF_PILE, 30, 60);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.FLOWERING_AZALEA_LEAF_PILE, 30, 60);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.OAK_HERRINGBONE, 5, 20);
@@ -1348,6 +1400,7 @@ public class ModBlocks {
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.PALE_OAK_HERRINGBONE, 5, 20);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.BAMBOO_HERRINGBONE, 5, 20);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.ASPEN_HERRINGBONE, 5, 20);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.POPLAR_HERRINGBONE, 5, 20);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.OAK_MOSAIC, 5, 20);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.SPRUCE_MOSAIC, 5, 20);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.BIRCH_MOSAIC, 5, 20);
@@ -1358,6 +1411,7 @@ public class ModBlocks {
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.CHERRY_MOSAIC, 5, 20);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.PALE_OAK_MOSAIC, 5, 20);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.ASPEN_MOSAIC, 5, 20);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.POPLAR_MOSAIC, 5, 20);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.OAK_MOSAIC_STAIRS, 5, 20);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.SPRUCE_MOSAIC_STAIRS, 5, 20);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.BIRCH_MOSAIC_STAIRS, 5, 20);
@@ -1368,6 +1422,7 @@ public class ModBlocks {
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.CHERRY_MOSAIC_STAIRS, 5, 20);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.PALE_OAK_MOSAIC_STAIRS, 5, 20);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.ASPEN_MOSAIC_STAIRS, 5, 20);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.POPLAR_MOSAIC_STAIRS, 5, 20);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.OAK_MOSAIC_SLAB, 5, 20);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.SPRUCE_MOSAIC_SLAB, 5, 20);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.BIRCH_MOSAIC_SLAB, 5, 20);
@@ -1378,6 +1433,7 @@ public class ModBlocks {
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.CHERRY_MOSAIC_SLAB, 5, 20);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.PALE_OAK_MOSAIC_SLAB, 5, 20);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.ASPEN_MOSAIC_SLAB, 5, 20);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.POPLAR_MOSAIC_SLAB, 5, 20);
 
     }
 }

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "picturesque:birch_sapling"
+        "recipes": "picturesque:birch_sapling"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

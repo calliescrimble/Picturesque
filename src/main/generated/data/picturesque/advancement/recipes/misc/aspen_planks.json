@@ -43,7 +43,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "picturesque:aspen_planks"
+        "recipes": "picturesque:aspen_planks"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

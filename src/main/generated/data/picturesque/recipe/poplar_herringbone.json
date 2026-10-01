@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "P": "minecraft:poplar_planks"
+  },
+  "pattern": [
+    "P ",
+    "PP"
+  ],
+  "result": {
+    "count": 3,
+    "id": "picturesque:poplar_herringbone"
+  }
+}

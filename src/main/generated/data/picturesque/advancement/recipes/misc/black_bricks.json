@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "picturesque:black_bricks"
+        "recipes": "picturesque:black_bricks"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

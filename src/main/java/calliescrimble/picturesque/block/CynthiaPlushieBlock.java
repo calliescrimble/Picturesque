@@ -20,7 +20,6 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jspecify.annotations.Nullable;
 
 public class CynthiaPlushieBlock extends HorizontalDirectionalBlock {
-    public static final MapCodec<CynthiaPlushieBlock> CODEC = simpleCodec(CynthiaPlushieBlock::new);
     private static final VoxelShape SHAPE = Block.box(3.0, 0.0, 3.0, 13.0, 16.0, 13.0);
 
     public CynthiaPlushieBlock(Properties settings) {super(settings);}
@@ -28,12 +27,6 @@ public class CynthiaPlushieBlock extends HorizontalDirectionalBlock {
     @Override
     protected VoxelShape getShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
         return SHAPE;
-    }
-
-
-    @Override
-    protected MapCodec<? extends HorizontalDirectionalBlock> codec() {
-        return CODEC;
     }
 
     @Override

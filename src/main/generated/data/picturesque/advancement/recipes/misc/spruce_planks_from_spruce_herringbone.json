@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "picturesque:spruce_planks_from_spruce_herringbone"
+        "recipes": "picturesque:spruce_planks_from_spruce_herringbone"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

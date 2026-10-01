@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "picturesque:aspen_stairs"
+        "recipes": "picturesque:aspen_stairs"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

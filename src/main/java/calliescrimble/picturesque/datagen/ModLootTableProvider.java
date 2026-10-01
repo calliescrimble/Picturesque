@@ -47,6 +47,7 @@ public class ModLootTableProvider extends FabricBlockLootSubProvider {
         dropSelf(ModBlocks.CRIMSON_HERRINGBONE);
         dropSelf(ModBlocks.WARPED_HERRINGBONE);
         dropSelf(ModBlocks.ASPEN_HERRINGBONE);
+        dropSelf(ModBlocks.POPLAR_HERRINGBONE);
 
         dropSelf(ModBlocks.OAK_MOSAIC);
         dropSelf(ModBlocks.SPRUCE_MOSAIC);
@@ -60,6 +61,7 @@ public class ModLootTableProvider extends FabricBlockLootSubProvider {
         dropSelf(ModBlocks.CRIMSON_MOSAIC);
         dropSelf(ModBlocks.WARPED_MOSAIC);
         dropSelf(ModBlocks.ASPEN_MOSAIC);
+        dropSelf(ModBlocks.POPLAR_MOSAIC);
         dropSelf(ModBlocks.OAK_MOSAIC_STAIRS);
         dropSelf(ModBlocks.SPRUCE_MOSAIC_STAIRS);
         dropSelf(ModBlocks.BIRCH_MOSAIC_STAIRS);
@@ -72,6 +74,7 @@ public class ModLootTableProvider extends FabricBlockLootSubProvider {
         dropSelf(ModBlocks.CRIMSON_MOSAIC_STAIRS);
         dropSelf(ModBlocks.WARPED_MOSAIC_STAIRS);
         dropSelf(ModBlocks.ASPEN_MOSAIC_STAIRS);
+        dropSelf(ModBlocks.POPLAR_MOSAIC_STAIRS);
         add(ModBlocks.OAK_MOSAIC_SLAB, createSlabItemTable(ModBlocks.OAK_MOSAIC_SLAB));
         add(ModBlocks.SPRUCE_MOSAIC_SLAB, createSlabItemTable(ModBlocks.SPRUCE_MOSAIC_SLAB));
         add(ModBlocks.BIRCH_MOSAIC_SLAB, createSlabItemTable(ModBlocks.BIRCH_MOSAIC_SLAB));
@@ -84,6 +87,7 @@ public class ModLootTableProvider extends FabricBlockLootSubProvider {
         add(ModBlocks.CRIMSON_MOSAIC_SLAB, createSlabItemTable(ModBlocks.CRIMSON_MOSAIC_SLAB));
         add(ModBlocks.WARPED_MOSAIC_SLAB, createSlabItemTable(ModBlocks.WARPED_MOSAIC_SLAB));
         add(ModBlocks.ASPEN_MOSAIC_SLAB, createSlabItemTable(ModBlocks.ASPEN_MOSAIC_SLAB));
+        add(ModBlocks.POPLAR_MOSAIC_SLAB, createSlabItemTable(ModBlocks.POPLAR_MOSAIC_SLAB));
 
         dropSelf(ModBlocks.WHITE_BRICKS);
         dropSelf(ModBlocks.WHITE_BRICK_STAIRS);
@@ -167,6 +171,9 @@ public class ModLootTableProvider extends FabricBlockLootSubProvider {
         dropSelf(ModBlocks.CHERRY_LEAF_PILE);
         dropSelf(ModBlocks.WHITE_CHERRY_LEAF_PILE);
         dropSelf(ModBlocks.PALE_OAK_LEAF_PILE);
+        dropSelf(ModBlocks.RED_POPLAR_LEAF_PILE);
+        dropSelf(ModBlocks.ORANGE_POPLAR_LEAF_PILE);
+        dropSelf(ModBlocks.YELLOW_POPLAR_LEAF_PILE);
 
         dropSelf(ModBlocks.CALCITE_STAIRS);
         dropSelf(ModBlocks.SMOOTH_BASALT_STAIRS);

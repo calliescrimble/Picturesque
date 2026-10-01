@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "picturesque:amethyst_slab"
+        "recipes": "picturesque:amethyst_slab"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

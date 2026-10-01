@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "picturesque:cherry_herringbone"
+        "recipes": "picturesque:cherry_herringbone"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

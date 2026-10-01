@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "picturesque:lime_bricks"
+        "recipes": "picturesque:lime_bricks"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

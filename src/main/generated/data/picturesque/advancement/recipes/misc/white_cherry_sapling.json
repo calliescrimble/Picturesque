@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "picturesque:white_cherry_sapling"
+        "recipes": "picturesque:white_cherry_sapling"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

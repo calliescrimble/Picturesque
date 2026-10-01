@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "picturesque:callie_plushie_from_gray_wool_stonecutting"
+        "recipes": "picturesque:callie_plushie_from_gray_wool_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

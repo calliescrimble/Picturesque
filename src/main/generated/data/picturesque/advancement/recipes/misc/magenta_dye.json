@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "picturesque:magenta_dye"
+        "recipes": "picturesque:magenta_dye"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

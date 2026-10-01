@@ -1,4 +1,4 @@
-// 26.2	-999999999-01-01T00:00:00	Picturesque/Tags for minecraft:item
+// 26.3	-999999999-01-01T00:00:00	Picturesque/Tags for minecraft:item
 5c95b4ef3e0a690e325ba274bfed10f9ea8e912f data/minecraft/tags/item/bee_food.json
 5a190d894af317292e593f38027907585b3dee91 data/minecraft/tags/item/boats.json
 8bcf629ca5bd0230f0104f6c97f71ff73fb6ee7f data/minecraft/tags/item/chest_boats.json
@@ -8,13 +8,14 @@ b3482460185a6d5e31d2d2b885d7b896816fbac3 data/minecraft/tags/item/hanging_signs.
 b0912279b6fe4de363ad8ee084a0e682c382243a data/minecraft/tags/item/planks.json
 243cfcd0e1f1f21461047b2904b169178a0db07e data/minecraft/tags/item/saplings.json
 60313ade563360ef7360616599475b27789ff32c data/minecraft/tags/item/signs.json
-6b6db16c9e29ace33fe2d670b46c9610329e8177 data/minecraft/tags/item/sulfur_cube_archetype/bouncy.json
+abc9521a52aa0d8bbbf8093f903402064ad1a293 data/minecraft/tags/item/sulfur_cube_archetype/bouncy.json
 a050f3c9ff3d21fa2404c55565467e1c1c141570 data/minecraft/tags/item/sulfur_cube_archetype/slow_bouncy.json
-80b74c498861dae875b7a0e90c95bc5b442d553c data/minecraft/tags/item/sulfur_cube_swallowable.json
+da0fa479be15a7c36d0afe40a2c67131a83f9816 data/minecraft/tags/item/sulfur_cube_swallowable.json
 cf7ca15cf4cb8a8843671dd2ffe6559f9e19fefa data/minecraft/tags/item/wooden_buttons.json
 0ee43c8a778119402a1abffaecc8915f1b0a5d74 data/minecraft/tags/item/wooden_doors.json
 1bbdb61fff093810ebdc576061b94d834400ccb8 data/minecraft/tags/item/wooden_pressure_plates.json
-132758b74a1c5fa1b6ace283a4294c39f14d58c2 data/minecraft/tags/item/wooden_slabs.json
-4433646a188382a47ed40b6e9c13fa2697ce3104 data/minecraft/tags/item/wooden_stairs.json
+09d1477e3da5d355580a1501f57facba579542c2 data/minecraft/tags/item/wooden_slabs.json
+9046b81ab59fc26bd3d3fa9e162a2062ef61ae18 data/minecraft/tags/item/wooden_stairs.json
 e53957b2badd684a5105a37050c5a5c1f67fdb98 data/minecraft/tags/item/wooden_trapdoors.json
 8f9283ee6493e7f19978586feef1f01d438c2242 data/picturesque/tags/item/aspen_logs.json
+72c44315c1e1e7aae7c24aa8a4f46383dfad3894 data/picturesque/tags/item/poplar_leaves.json

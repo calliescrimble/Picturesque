@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "picturesque:calcite_tiles"
+        "recipes": "picturesque:calcite_tiles"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

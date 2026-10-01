@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "picturesque:cynthia_plushie_from_yellow_wool_stonecutting"
+        "recipes": "picturesque:cynthia_plushie_from_yellow_wool_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

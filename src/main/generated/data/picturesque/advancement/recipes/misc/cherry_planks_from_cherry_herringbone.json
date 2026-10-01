@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "picturesque:cherry_planks_from_cherry_herringbone"
+        "recipes": "picturesque:cherry_planks_from_cherry_herringbone"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "picturesque:warped_herringbone"
+        "recipes": "picturesque:warped_herringbone"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

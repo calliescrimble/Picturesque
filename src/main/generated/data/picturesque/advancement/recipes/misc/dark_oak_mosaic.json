@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "picturesque:dark_oak_mosaic"
+        "recipes": "picturesque:dark_oak_mosaic"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "picturesque:dark_oak_herringbone"
+        "recipes": "picturesque:dark_oak_herringbone"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

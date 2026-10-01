@@ -31,6 +31,7 @@
     "picturesque:crimson_herringbone",
     "picturesque:warped_herringbone",
     "picturesque:aspen_herringbone",
+    "picturesque:poplar_herringbone",
     "picturesque:oak_mosaic",
     "picturesque:spruce_mosaic",
     "picturesque:birch_mosaic",
@@ -43,6 +44,7 @@
     "picturesque:crimson_mosaic",
     "picturesque:warped_mosaic",
     "picturesque:aspen_mosaic",
+    "picturesque:poplar_mosaic",
     "picturesque:oak_mosaic_slab",
     "picturesque:spruce_mosaic_slab",
     "picturesque:birch_mosaic_slab",
@@ -55,6 +57,7 @@
     "picturesque:crimson_mosaic_slab",
     "picturesque:warped_mosaic_slab",
     "picturesque:aspen_mosaic_slab",
+    "picturesque:poplar_mosaic_slab",
     "picturesque:oak_mosaic_stairs",
     "picturesque:spruce_mosaic_stairs",
     "picturesque:birch_mosaic_stairs",
@@ -66,6 +69,7 @@
     "picturesque:pale_oak_mosaic_stairs",
     "picturesque:crimson_mosaic_stairs",
     "picturesque:warped_mosaic_stairs",
-    "picturesque:aspen_mosaic_stairs"
+    "picturesque:aspen_mosaic_stairs",
+    "picturesque:poplar_mosaic_stairs"
   ]
 }

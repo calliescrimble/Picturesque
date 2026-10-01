@@ -8,10 +8,7 @@ import calliescrimble.picturesque.item.ModLootTableModifiers;
 import calliescrimble.picturesque.particle.ModParticles;
 import calliescrimble.picturesque.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
-import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.minecraft.resources.Identifier;
-import net.minecraft.world.level.block.entity.BlockEntityType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

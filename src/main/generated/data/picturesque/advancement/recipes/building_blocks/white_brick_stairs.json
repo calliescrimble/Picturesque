@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "picturesque:white_brick_stairs"
+        "recipes": "picturesque:white_brick_stairs"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

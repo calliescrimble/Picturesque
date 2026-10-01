@@ -12,6 +12,7 @@ import net.minecraft.tags.BlockItemTags;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.EntityTypeTags;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.world.level.block.Blocks;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -102,6 +103,7 @@ public class ModTagProviders {
                     .add(ModBlocks.getRK(ModBlocks.CRIMSON_HERRINGBONE))
                     .add(ModBlocks.getRK(ModBlocks.WARPED_HERRINGBONE))
                     .add(ModBlocks.getRK(ModBlocks.ASPEN_HERRINGBONE))
+                    .add(ModBlocks.getRK(ModBlocks.POPLAR_HERRINGBONE))
                     .add(ModBlocks.getRK(ModBlocks.OAK_MOSAIC))
                     .add(ModBlocks.getRK(ModBlocks.SPRUCE_MOSAIC))
                     .add(ModBlocks.getRK(ModBlocks.BIRCH_MOSAIC))
@@ -114,6 +116,7 @@ public class ModTagProviders {
                     .add(ModBlocks.getRK(ModBlocks.CRIMSON_MOSAIC))
                     .add(ModBlocks.getRK(ModBlocks.WARPED_MOSAIC))
                     .add(ModBlocks.getRK(ModBlocks.ASPEN_MOSAIC))
+                    .add(ModBlocks.getRK(ModBlocks.POPLAR_MOSAIC))
                     .add(ModBlocks.getRK(ModBlocks.OAK_MOSAIC_SLAB))
                     .add(ModBlocks.getRK(ModBlocks.SPRUCE_MOSAIC_SLAB))
                     .add(ModBlocks.getRK(ModBlocks.BIRCH_MOSAIC_SLAB))
@@ -126,6 +129,7 @@ public class ModTagProviders {
                     .add(ModBlocks.getRK(ModBlocks.CRIMSON_MOSAIC_SLAB))
                     .add(ModBlocks.getRK(ModBlocks.WARPED_MOSAIC_SLAB))
                     .add(ModBlocks.getRK(ModBlocks.ASPEN_MOSAIC_SLAB))
+                    .add(ModBlocks.getRK(ModBlocks.POPLAR_MOSAIC_SLAB))
                     .add(ModBlocks.getRK(ModBlocks.OAK_MOSAIC_STAIRS))
                     .add(ModBlocks.getRK(ModBlocks.SPRUCE_MOSAIC_STAIRS))
                     .add(ModBlocks.getRK(ModBlocks.BIRCH_MOSAIC_STAIRS))
@@ -137,7 +141,8 @@ public class ModTagProviders {
                     .add(ModBlocks.getRK(ModBlocks.PALE_OAK_MOSAIC_STAIRS))
                     .add(ModBlocks.getRK(ModBlocks.CRIMSON_MOSAIC_STAIRS))
                     .add(ModBlocks.getRK(ModBlocks.WARPED_MOSAIC_STAIRS))
-                    .add(ModBlocks.getRK(ModBlocks.ASPEN_MOSAIC_STAIRS));
+                    .add(ModBlocks.getRK(ModBlocks.ASPEN_MOSAIC_STAIRS))
+                    .add(ModBlocks.getRK(ModBlocks.POPLAR_MOSAIC_STAIRS));
 
             tag(BlockTags.MINEABLE_WITH_PICKAXE)
                     .add(ModBlocks.getRK(ModBlocks.CALCITE_STAIRS))
@@ -258,7 +263,10 @@ public class ModTagProviders {
                     .add(ModBlocks.getRK(ModBlocks.FLOWERING_AZALEA_LEAF_PILE))
                     .add(ModBlocks.getRK(ModBlocks.CHERRY_LEAF_PILE))
                     .add(ModBlocks.getRK(ModBlocks.WHITE_CHERRY_LEAF_PILE))
-                    .add(ModBlocks.getRK(ModBlocks.PALE_OAK_LEAF_PILE));
+                    .add(ModBlocks.getRK(ModBlocks.PALE_OAK_LEAF_PILE))
+                    .add(ModBlocks.getRK(ModBlocks.RED_POPLAR_LEAF_PILE))
+                    .add(ModBlocks.getRK(ModBlocks.ORANGE_POPLAR_LEAF_PILE))
+                    .add(ModBlocks.getRK(ModBlocks.YELLOW_POPLAR_LEAF_PILE));
 
             tag(BlockTags.SWORD_EFFICIENT)
                     .add(ModBlocks.getRK(ModBlocks.ASPEN_LEAVES))
@@ -275,7 +283,10 @@ public class ModTagProviders {
                     .add(ModBlocks.getRK(ModBlocks.FLOWERING_AZALEA_LEAF_PILE))
                     .add(ModBlocks.getRK(ModBlocks.CHERRY_LEAF_PILE))
                     .add(ModBlocks.getRK(ModBlocks.WHITE_CHERRY_LEAF_PILE))
-                    .add(ModBlocks.getRK(ModBlocks.PALE_OAK_LEAF_PILE));
+                    .add(ModBlocks.getRK(ModBlocks.PALE_OAK_LEAF_PILE))
+                    .add(ModBlocks.getRK(ModBlocks.RED_POPLAR_LEAF_PILE))
+                    .add(ModBlocks.getRK(ModBlocks.ORANGE_POPLAR_LEAF_PILE))
+                    .add(ModBlocks.getRK(ModBlocks.YELLOW_POPLAR_LEAF_PILE));
 
             tag(BlockTags.LEAVES)
                     .add(ModBlocks.getRK(ModBlocks.ASPEN_LEAVES))
@@ -311,6 +322,7 @@ public class ModTagProviders {
                     .add(ModBlocks.getRK(ModBlocks.CRIMSON_MOSAIC_SLAB))
                     .add(ModBlocks.getRK(ModBlocks.WARPED_MOSAIC_SLAB))
                     .add(ModBlocks.getRK(ModBlocks.ASPEN_MOSAIC_SLAB))
+                    .add(ModBlocks.getRK(ModBlocks.ASPEN_MOSAIC_SLAB))
                     .add(ModBlocks.getRK(ModBlocks.WHITE_BRICK_SLAB))
                     .add(ModBlocks.getRK(ModBlocks.LIGHT_GRAY_BRICK_SLAB))
                     .add(ModBlocks.getRK(ModBlocks.GRAY_BRICK_SLAB))
@@ -341,7 +353,8 @@ public class ModTagProviders {
                     .add(ModBlocks.getRK(ModBlocks.PALE_OAK_MOSAIC_SLAB))
                     .add(ModBlocks.getRK(ModBlocks.CRIMSON_MOSAIC_SLAB))
                     .add(ModBlocks.getRK(ModBlocks.WARPED_MOSAIC_SLAB))
-                    .add(ModBlocks.getRK(ModBlocks.ASPEN_MOSAIC_SLAB));
+                    .add(ModBlocks.getRK(ModBlocks.ASPEN_MOSAIC_SLAB))
+                    .add(ModBlocks.getRK(ModBlocks.POPLAR_MOSAIC_SLAB));
 
             tag(BlockTags.STAIRS)
                     .add(ModBlocks.getRK(ModBlocks.ASPEN_STAIRS))
@@ -366,6 +379,7 @@ public class ModTagProviders {
                     .add(ModBlocks.getRK(ModBlocks.CRIMSON_MOSAIC_STAIRS))
                     .add(ModBlocks.getRK(ModBlocks.WARPED_MOSAIC_STAIRS))
                     .add(ModBlocks.getRK(ModBlocks.ASPEN_MOSAIC_STAIRS))
+                    .add(ModBlocks.getRK(ModBlocks.POPLAR_MOSAIC_STAIRS))
                     .add(ModBlocks.getRK(ModBlocks.WHITE_BRICK_STAIRS))
                     .add(ModBlocks.getRK(ModBlocks.LIGHT_GRAY_BRICK_STAIRS))
                     .add(ModBlocks.getRK(ModBlocks.GRAY_BRICK_STAIRS))
@@ -396,7 +410,8 @@ public class ModTagProviders {
                     .add(ModBlocks.getRK(ModBlocks.PALE_OAK_MOSAIC_STAIRS))
                     .add(ModBlocks.getRK(ModBlocks.CRIMSON_MOSAIC_STAIRS))
                     .add(ModBlocks.getRK(ModBlocks.WARPED_MOSAIC_STAIRS))
-                    .add(ModBlocks.getRK(ModBlocks.ASPEN_MOSAIC_STAIRS));
+                    .add(ModBlocks.getRK(ModBlocks.ASPEN_MOSAIC_STAIRS))
+                    .add(ModBlocks.getRK(ModBlocks.POPLAR_MOSAIC_STAIRS));
 
             tag(BlockTags.WOODEN_DOORS)
                     .add(ModBlocks.getRK(ModBlocks.ASPEN_DOOR));
@@ -490,6 +505,11 @@ public class ModTagProviders {
                     .add(ModItems.getRK(ModBlocks.ASPEN_WOOD.asItem()))
                     .add(ModItems.getRK(ModBlocks.STRIPPED_ASPEN_WOOD.asItem()));
 
+            tag(ModTags.Items.POPLAR_LEAVES)
+                    .add(ModItems.getRK(Blocks.RED_POPLAR_LEAVES.asItem()))
+                    .add(ModItems.getRK(Blocks.ORANGE_POPLAR_LEAVES.asItem()))
+                    .add(ModItems.getRK(Blocks.YELLOW_POPLAR_LEAVES.asItem()));
+
             tag(ItemTags.WOODEN_SLABS)
                     .add(ModItems.getRK(ModBlocks.ASPEN_SLAB.asItem()))
                     .add(ModItems.getRK(ModBlocks.OAK_MOSAIC_SLAB.asItem()))
@@ -503,7 +523,8 @@ public class ModTagProviders {
                     .add(ModItems.getRK(ModBlocks.PALE_OAK_MOSAIC_SLAB.asItem()))
                     .add(ModItems.getRK(ModBlocks.CRIMSON_MOSAIC_SLAB.asItem()))
                     .add(ModItems.getRK(ModBlocks.WARPED_MOSAIC_SLAB.asItem()))
-                    .add(ModItems.getRK(ModBlocks.ASPEN_MOSAIC_SLAB.asItem()));
+                    .add(ModItems.getRK(ModBlocks.ASPEN_MOSAIC_SLAB.asItem()))
+                    .add(ModItems.getRK(ModBlocks.POPLAR_MOSAIC_SLAB.asItem()));
 
             tag(ItemTags.WOODEN_STAIRS)
                     .add(ModItems.getRK(ModBlocks.ASPEN_STAIRS.asItem()))
@@ -518,7 +539,8 @@ public class ModTagProviders {
                     .add(ModItems.getRK(ModBlocks.PALE_OAK_MOSAIC_STAIRS.asItem()))
                     .add(ModItems.getRK(ModBlocks.CRIMSON_MOSAIC_STAIRS.asItem()))
                     .add(ModItems.getRK(ModBlocks.WARPED_MOSAIC_STAIRS.asItem()))
-                    .add(ModItems.getRK(ModBlocks.ASPEN_MOSAIC_STAIRS.asItem()));
+                    .add(ModItems.getRK(ModBlocks.ASPEN_MOSAIC_STAIRS.asItem()))
+                    .add(ModItems.getRK(ModBlocks.POPLAR_MOSAIC_STAIRS.asItem()));
 
             tag(ItemTags.WOODEN_DOORS)
                     .add(ModItems.getRK(ModBlocks.ASPEN_DOOR.asItem()));
@@ -574,6 +596,7 @@ public class ModTagProviders {
                     .add(ModItems.getRK(ModBlocks.CRIMSON_HERRINGBONE.asItem()))
                     .add(ModItems.getRK(ModBlocks.WARPED_HERRINGBONE.asItem()))
                     .add(ModItems.getRK(ModBlocks.ASPEN_HERRINGBONE.asItem()))
+                    .add(ModItems.getRK(ModBlocks.POPLAR_HERRINGBONE.asItem()))
                     .add(ModItems.getRK(ModBlocks.OAK_MOSAIC.asItem()))
                     .add(ModItems.getRK(ModBlocks.SPRUCE_MOSAIC.asItem()))
                     .add(ModItems.getRK(ModBlocks.BIRCH_MOSAIC.asItem()))
@@ -586,6 +609,7 @@ public class ModTagProviders {
                     .add(ModItems.getRK(ModBlocks.CRIMSON_MOSAIC.asItem()))
                     .add(ModItems.getRK(ModBlocks.WARPED_MOSAIC.asItem()))
                     .add(ModItems.getRK(ModBlocks.ASPEN_MOSAIC.asItem()))
+                    .add(ModItems.getRK(ModBlocks.POPLAR_MOSAIC.asItem()))
                     .add(ModItems.getRK(ModBlocks.CALCITE_BRICKS.asItem()))
                     .add(ModItems.getRK(ModBlocks.CHISELED_CALCITE_BRICKS.asItem()))
                     .add(ModItems.getRK(ModBlocks.CALCITE_TILES.asItem()))
@@ -629,6 +653,7 @@ public class ModTagProviders {
                     .add(ModItems.getRK(ModBlocks.CRIMSON_HERRINGBONE.asItem()))
                     .add(ModItems.getRK(ModBlocks.WARPED_HERRINGBONE.asItem()))
                     .add(ModItems.getRK(ModBlocks.ASPEN_HERRINGBONE.asItem()))
+                    .add(ModItems.getRK(ModBlocks.POPLAR_HERRINGBONE.asItem()))
                     .add(ModItems.getRK(ModBlocks.OAK_MOSAIC.asItem()))
                     .add(ModItems.getRK(ModBlocks.SPRUCE_MOSAIC.asItem()))
                     .add(ModItems.getRK(ModBlocks.BIRCH_MOSAIC.asItem()))
@@ -640,7 +665,8 @@ public class ModTagProviders {
                     .add(ModItems.getRK(ModBlocks.PALE_OAK_MOSAIC.asItem()))
                     .add(ModItems.getRK(ModBlocks.CRIMSON_MOSAIC.asItem()))
                     .add(ModItems.getRK(ModBlocks.WARPED_MOSAIC.asItem()))
-                    .add(ModItems.getRK(ModBlocks.ASPEN_MOSAIC.asItem()));
+                    .add(ModItems.getRK(ModBlocks.ASPEN_MOSAIC.asItem()))
+                    .add(ModItems.getRK(ModBlocks.POPLAR_MOSAIC.asItem()));
 
             tag(ItemTags.SULFUR_CUBE_ARCHETYPE_SLOW_BOUNCY)
                     .add(ModItems.getRK(ModBlocks.CALCITE_BRICKS.asItem()))

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "picturesque:bamboo_planks_from_bamboo_herringbone"
+        "recipes": "picturesque:bamboo_planks_from_bamboo_herringbone"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

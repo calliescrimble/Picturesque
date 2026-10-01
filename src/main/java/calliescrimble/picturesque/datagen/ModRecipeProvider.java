@@ -5,13 +5,16 @@ import calliescrimble.picturesque.item.ModItems;
 import calliescrimble.picturesque.item.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.minecraft.advancements.Advancement;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.recipes.RecipeCategory;
-import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
+import net.minecraft.data.worldgen.BootstrapContext;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.crafting.Recipe;
 import net.minecraft.world.level.block.Blocks;
 import java.util.concurrent.CompletableFuture;
 
@@ -21,8 +24,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     }
 
     @Override
-    protected RecipeProvider createRecipeProvider(HolderLookup.Provider wrapperLookup, RecipeOutput recipeExporter) {
-        return new RecipeProvider(wrapperLookup, recipeExporter) {
+    protected RecipeProvider createRecipeProvider(HolderLookup.Provider provider, BootstrapContext<Recipe<?>> recipes, BootstrapContext<Advancement> advancements) {
+        return new RecipeProvider(recipes, advancements) {
             @Override
             public void buildRecipes() {
 
@@ -187,6 +190,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .requires(Blocks.PALE_OAK_LEAVES)
                         .unlockedBy(getHasName(Blocks.PALE_OAK_LEAVES), has(Blocks.PALE_OAK_LEAVES))
                         .save(output);
+                shapeless(RecipeCategory.MISC, Blocks.POPLAR_SAPLING)
+                        .requires(ModTags.Items.POPLAR_LEAVES)
+                        .unlockedBy(getHasName(Blocks.RED_POPLAR_LEAVES), has(Blocks.RED_POPLAR_LEAVES))
+                        .unlockedBy(getHasName(Blocks.ORANGE_POPLAR_LEAVES), has(Blocks.ORANGE_POPLAR_LEAVES))
+                        .unlockedBy(getHasName(Blocks.YELLOW_POPLAR_LEAVES), has(Blocks.YELLOW_POPLAR_LEAVES))
+                        .save(output);
                 shapeless(RecipeCategory.MISC, Blocks.AZALEA)
                         .requires(Blocks.AZALEA_LEAVES)
                         .unlockedBy(getHasName(Blocks.AZALEA_LEAVES), has(Blocks.AZALEA_LEAVES))
@@ -319,6 +328,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .define('P', ModBlocks.ASPEN_PLANKS)
                         .unlockedBy(getHasName(ModBlocks.ASPEN_PLANKS), has(ModBlocks.ASPEN_PLANKS))
                         .save(output);
+                shaped(RecipeCategory.MISC, ModBlocks.POPLAR_HERRINGBONE, 3)
+                        .pattern("P ")
+                        .pattern("PP")
+                        .define('P', Blocks.POPLAR_PLANKS)
+                        .unlockedBy(getHasName(Blocks.POPLAR_PLANKS), has(Blocks.POPLAR_PLANKS))
+                        .save(output);
 
                 shapeless(RecipeCategory.MISC, Blocks.OAK_PLANKS)
                         .requires(ModBlocks.OAK_HERRINGBONE)
@@ -372,6 +387,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .requires(ModBlocks.WARPED_HERRINGBONE)
                         .unlockedBy(getHasName(ModBlocks.WARPED_HERRINGBONE), has(ModBlocks.WARPED_HERRINGBONE))
                         .save(output, "warped_planks_from_warped_herringbone");
+                shapeless(RecipeCategory.MISC, Blocks.POPLAR_PLANKS)
+                        .requires(ModBlocks.POPLAR_HERRINGBONE)
+                        .unlockedBy(getHasName(ModBlocks.POPLAR_HERRINGBONE), has(ModBlocks.POPLAR_HERRINGBONE))
+                        .save(output, "poplar_planks_from_poplar_herringbone");
 
                 shapeless(RecipeCategory.MISC, Blocks.OAK_PLANKS)
                         .requires(ModBlocks.OAK_MOSAIC)
@@ -425,6 +444,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .requires(ModBlocks.WARPED_MOSAIC)
                         .unlockedBy(getHasName(ModBlocks.WARPED_MOSAIC), has(ModBlocks.WARPED_MOSAIC))
                         .save(output, "warped_planks_from_warped_mosaic");
+                shapeless(RecipeCategory.MISC, Blocks.POPLAR_PLANKS)
+                        .requires(ModBlocks.POPLAR_MOSAIC)
+                        .unlockedBy(getHasName(ModBlocks.POPLAR_MOSAIC), has(ModBlocks.POPLAR_MOSAIC))
+                        .save(output, "poplar_planks_from_poplar_mosaic");
 
                 shaped(RecipeCategory.MISC, ModBlocks.CALCITE_BRICKS, 4)
                         .pattern("CC")
@@ -1048,6 +1071,21 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .define('L', Blocks.PALE_OAK_LEAVES)
                         .unlockedBy(getHasName(Blocks.PALE_OAK_LEAVES), has(Blocks.PALE_OAK_LEAVES))
                         .save(output);
+                shaped(RecipeCategory.MISC, ModBlocks.RED_POPLAR_LEAF_PILE, 3)
+                        .pattern("LL")
+                        .define('L', Blocks.RED_POPLAR_LEAVES)
+                        .unlockedBy(getHasName(Blocks.RED_POPLAR_LEAVES), has(Blocks.RED_POPLAR_LEAVES))
+                        .save(output);
+                shaped(RecipeCategory.MISC, ModBlocks.ORANGE_POPLAR_LEAF_PILE, 3)
+                        .pattern("LL")
+                        .define('L', Blocks.ORANGE_POPLAR_LEAVES)
+                        .unlockedBy(getHasName(Blocks.ORANGE_POPLAR_LEAVES), has(Blocks.ORANGE_POPLAR_LEAVES))
+                        .save(output);
+                shaped(RecipeCategory.MISC, ModBlocks.YELLOW_POPLAR_LEAF_PILE, 3)
+                        .pattern("LL")
+                        .define('L', Blocks.YELLOW_POPLAR_LEAVES)
+                        .unlockedBy(getHasName(Blocks.YELLOW_POPLAR_LEAVES), has(Blocks.YELLOW_POPLAR_LEAVES))
+                        .save(output);
 
                 shaped(RecipeCategory.MISC, ModBlocks.OAK_MOSAIC)
                         .pattern("S")
@@ -1121,6 +1159,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .define('S', ModBlocks.ASPEN_SLAB)
                         .unlockedBy(getHasName(ModBlocks.ASPEN_SLAB), has(ModBlocks.ASPEN_SLAB))
                         .save(output);
+                shaped(RecipeCategory.MISC, ModBlocks.POPLAR_MOSAIC)
+                        .pattern("S")
+                        .pattern("S")
+                        .define('S', Blocks.POPLAR_SLAB)
+                        .unlockedBy(getHasName(Blocks.POPLAR_SLAB), has(Blocks.POPLAR_SLAB))
+                        .save(output);
                 stairBuilder(ModBlocks.OAK_MOSAIC_STAIRS, Ingredient.of(ModBlocks.OAK_MOSAIC))
                         .unlockedBy(getHasName(ModBlocks.OAK_MOSAIC), has(ModBlocks.OAK_MOSAIC))
                         .save(output);
@@ -1193,6 +1237,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 slabBuilder(RecipeCategory.MISC, ModBlocks.ASPEN_MOSAIC_SLAB, Ingredient.of(ModBlocks.ASPEN_MOSAIC))
                         .unlockedBy(getHasName(ModBlocks.ASPEN_MOSAIC), has(ModBlocks.ASPEN_MOSAIC))
                         .save(output);
+                stairBuilder(ModBlocks.POPLAR_MOSAIC_STAIRS, Ingredient.of(ModBlocks.POPLAR_MOSAIC))
+                        .unlockedBy(getHasName(ModBlocks.POPLAR_MOSAIC), has(ModBlocks.POPLAR_MOSAIC))
+                        .save(output);
+                slabBuilder(RecipeCategory.MISC, ModBlocks.POPLAR_MOSAIC_SLAB, Ingredient.of(ModBlocks.POPLAR_MOSAIC))
+                        .unlockedBy(getHasName(ModBlocks.POPLAR_MOSAIC), has(ModBlocks.POPLAR_MOSAIC))
+                        .save(output);
+
             }
         };
     }

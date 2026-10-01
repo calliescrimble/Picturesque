@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "picturesque:redstone_lantern"
+        "recipes": "picturesque:redstone_lantern"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

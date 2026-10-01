@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "picturesque:calcite_tile_wall_from_calcite_tiles_stonecutting"
+        "recipes": "picturesque:calcite_tile_wall_from_calcite_tiles_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

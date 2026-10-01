@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "picturesque:white_brick_wall_from_white_bricks_stonecutting"
+        "recipes": "picturesque:white_brick_wall_from_white_bricks_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "picturesque:bamboo_herringbone"
+        "recipes": "picturesque:bamboo_herringbone"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

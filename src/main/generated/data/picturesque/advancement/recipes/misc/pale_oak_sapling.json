@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "picturesque:pale_oak_sapling"
+        "recipes": "picturesque:pale_oak_sapling"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

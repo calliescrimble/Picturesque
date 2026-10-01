@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "picturesque:aspen_slab"
+        "recipes": "picturesque:aspen_slab"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

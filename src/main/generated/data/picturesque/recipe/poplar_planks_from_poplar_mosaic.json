@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "picturesque:poplar_mosaic"
+  ],
+  "result": {
+    "id": "minecraft:poplar_planks"
+  }
+}

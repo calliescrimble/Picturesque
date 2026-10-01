@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "picturesque:dark_oak_leaf_pile"
+        "recipes": "picturesque:dark_oak_leaf_pile"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

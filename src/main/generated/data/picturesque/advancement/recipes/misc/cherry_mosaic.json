@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "picturesque:cherry_mosaic"
+        "recipes": "picturesque:cherry_mosaic"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

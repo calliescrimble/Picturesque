@@ -21,6 +21,8 @@ public class ModTags {
 
         public static final TagKey<Item> ASPEN_LOGS = createTag("aspen_logs");
 
+        public static final TagKey<Item> POPLAR_LEAVES = createTag("poplar_leaves");
+
         private static TagKey<Item> createTag(String name) {
             return TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Picturesque.MOD_ID, name));
         }

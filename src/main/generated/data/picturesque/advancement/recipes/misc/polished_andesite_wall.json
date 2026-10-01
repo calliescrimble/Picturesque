@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "picturesque:polished_andesite_wall"
+        "recipes": "picturesque:polished_andesite_wall"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

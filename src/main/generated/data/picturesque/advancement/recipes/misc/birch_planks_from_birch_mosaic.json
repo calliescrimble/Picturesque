@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "picturesque:birch_planks_from_birch_mosaic"
+        "recipes": "picturesque:birch_planks_from_birch_mosaic"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

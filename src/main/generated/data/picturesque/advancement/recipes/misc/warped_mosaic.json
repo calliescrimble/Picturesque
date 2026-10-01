@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "picturesque:warped_mosaic"
+        "recipes": "picturesque:warped_mosaic"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

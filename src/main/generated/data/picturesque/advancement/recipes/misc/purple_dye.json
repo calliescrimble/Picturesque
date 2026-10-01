@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "picturesque:purple_dye"
+        "recipes": "picturesque:purple_dye"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

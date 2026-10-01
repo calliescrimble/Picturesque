@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "picturesque:crimson_planks_from_crimson_mosaic"
+        "recipes": "picturesque:crimson_planks_from_crimson_mosaic"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

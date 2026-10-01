@@ -23,7 +23,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "picturesque:calcite"
+        "recipes": "picturesque:calcite"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

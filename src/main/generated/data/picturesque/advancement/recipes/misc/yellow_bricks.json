@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "picturesque:yellow_bricks"
+        "recipes": "picturesque:yellow_bricks"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "picturesque:magenta_bricks"
+        "recipes": "picturesque:magenta_bricks"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

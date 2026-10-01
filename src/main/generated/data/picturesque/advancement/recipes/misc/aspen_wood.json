@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "picturesque:aspen_wood"
+        "recipes": "picturesque:aspen_wood"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

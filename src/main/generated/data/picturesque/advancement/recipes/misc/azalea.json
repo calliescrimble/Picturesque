@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "picturesque:azalea"
+        "recipes": "picturesque:azalea"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
